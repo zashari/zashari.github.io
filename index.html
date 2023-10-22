@@ -140,6 +140,23 @@
             overlay.addEventListener('click', () => {
                 overlay.style.display = 'none';
             });
+            if (window.innerWidth < 800) {
+              // Display a message for mobile users
+              var message = document.createElement('div');
+              message.innerHTML =
+                '<p>This website is best viewed on a desktop. Please switch to a desktop device for the optimal experience.</p>';
+              message.style.position = 'fixed';
+              message.style.top = '50%';
+              message.style.left = '50%';
+              message.style.transform = 'translate(-50%, -50%)';
+              message.style.textAlign = 'center';
+              message.style.padding = '20px';
+              message.style.backgroundColor = '#fff';
+              message.style.border = '1px solid #ccc';
+              message.style.zIndex = '9999';
+    
+              document.body.appendChild(message);
+            }
         });
     </script>
 
