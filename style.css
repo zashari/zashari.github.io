@@ -4,6 +4,7 @@
   flex-direction: row;
   justify-content: center;
   width: 100%;
+  height: 100vh; 
 }
 
 .home .div {
@@ -510,7 +511,7 @@
 
 .home .div-2 {
   position: absolute;
-  width: 1288px;
+  width: 100%;
   height: 674px;
   top: 1px;
   left: 160px;
@@ -599,23 +600,88 @@
   line-height: normal;
 }
 
- /* Default style for the message */
- .mobile-message {
+/* Default style for the message */
+.mobile-message {
   display: none; /* Initially hide the message */
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
+  font-family: "Satoshi Variable-Medium", Helvetica;
+  font-weight: 600;
+  box-shadow: #000000f5 0px 0px 100px;
   padding: 20px;
-  background-color: #fff;
+  background-color: #fbfff1;
+  color: #ff3401;
   border: 1px solid #ccc;
+  border-radius: 10px;
+  z-index: 9999;
+}
+.mobile-message2{
+  display: none; /* Initially hide the message */
+  position: fixed;
+  top: 68%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-family: "Satoshi Variable-Medium", Helvetica;
+  font-weight: 600;
+  box-shadow: #000000f5 0px 30px 50px;
+  font-size: 10px;
+  padding: 20px;
+  background-color: #fbfff1;
+  color: #ff3401;
+  border: 1px solid #ccc;
+  border-radius: 10px;
   z-index: 9999;
 }
 
 /* Media query for screens below 800px width */
 @media (max-width: 800px) {
-  .mobile-message {
-    display: block; /* Show the message */
+  .mobile-message, .mobile-message2 {
+    display: block; 
+  }
+
+  .home {
+    filter: blur(5px); 
+    overflow: hidden; 
+  }
+
+  .home .div {
+    height: auto; 
+  }
+
+  .home .overlap {
+    top: auto;
+    left: auto;
+  }
+
+  .home .certifications,
+  .home .projects,
+  .home .about-me,
+  .home .div-2 {
+    left: 0;
+    width: 100%;
+  }
+
+  .home .overlap-group,
+  .home .overlap-3,
+  .home .overlap-4,
+  .home .overlap-5,
+  .home .overlap-6,
+  .home .overlap-7,
+  .home .overlap-8,
+  .home .overlap-9 {
+    width: 100%;
+  }
+
+  .slider-wrapper {
+    top: 0;
+    max-width: 100%;
+  }
+
+  .slider img {
+    flex: 1 0 100%;
   }
 }
