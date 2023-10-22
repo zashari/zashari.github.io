@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="globals.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Data Science</title>
+  </head>
+  <body>
+    <div class="data-science">
+      <div class="div">
+        <div class="projects-container">
+          <div class="fortnite project" data-overlay="OVERLAYfortnite/index.html">
+            <div class="overlap-group">
+              <img class="fortnite-card" src="img/fortnite-card.png" />
+              <div class="text-wrapper">on Fortnite player statistics</div>
+              <div class="EDAFN">Exploratory Data<br />Analysis</div>
+            </div>
+          </div>
+          <div class="shipping project" data-overlay="OVERLAYshipping/index.html">
+            <div class="overlap">
+              <img class="img" src="img/shippping-card.png" />
+              <div class="text-wrapper-2">on a shipping company</div>
+              <div class="ontime-vs-late">Ontime vs Late<br />Prediction</div>
+            </div>
+          </div>
+          <div class="customer-churn project" data-overlay="OVERLAYcustomerchurn/index.html">
+            <div class="overlap-2">
+              <img class="time-series-card" src="img/time-series-card-1.png" />
+              <p class="p">on customers of a company</p>
+              <div class="churn-prediction">Churn<br />Prediction</div>
+            </div>
+          </div>
+          <div class="time-series project" data-overlay="OVERLAYtimeseries/index.html">
+            <div class="overlap">
+              <img class="img" src="img/time-series-card.png" />
+              <div class="text-wrapper-3">on ETH price</div>
+              <div class="time-series-2">Time Series<br />Forecasting</div>
+            </div>
+          </div>
+          <div class="sentimentanalysis project" data-overlay="OVERLAYsentimentalanalysis/index.html">
+            <div class="overlap-3">
+              <img class="SBX-card" src="img/sbx-card.png" />
+              <div class="text-wrapper-4">on Starbucks reviews</div>
+              <div class="sentiment-analysis">Sentiment<br />Analysis</div>
+            </div>
+          </div>
+          
+          <div class="multi-image project" data-overlay="OVERLAYmultiimage/index.html">
+            <div class="overlap">
+              <img class="img" src="img/multi-image-card.png" />
+              <div class="text-wrapper-5">on urban visual pollution</div>
+              <div class="multi-class-image">Multi-class Image<br />Classification</div>
+            </div>
+          </div>
+        </div>
+
+        <div id="overlay" class="overlay">
+          <!-- Content of the overlay will be loaded dynamically here -->
+        </div>
+
+        <img class="vector" src="img/vector-5.svg" />
+        <div class="overlap-wrapper">
+          <div class="overlap-4">
+            <div class="text-wrapper-6">Data</div>
+            <div class="text-wrapper-7">Science</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+  // Get the overlay element
+  var overlay = document.getElementById('overlay');
+
+  // Get all elements with class name '.project'
+  var projects = document.querySelectorAll('.data-science .project');
+
+  // Add click event listener to each project element
+  projects.forEach(function (project) {
+    project.addEventListener('click', function () {
+      // Get the corresponding overlay path
+      var overlayPath = project.getAttribute('data-overlay');
+
+      // Load overlay content dynamically
+      loadOverlayContent(overlayPath);
+
+      // Show the overlay
+      overlay.style.display = 'flex';
+    });
+  });
+
+  // Add click event listener to close the overlay when clicking outside of it
+  overlay.addEventListener('click', function (event) {
+    if (event.target === overlay) {
+      // Hide the overlay
+      overlay.style.display = 'none';
+    }
+  });
+
+  function loadOverlayContent(path) {
+  // Clear the previous content
+  overlay.innerHTML = '';
+
+  // You can use AJAX or other methods to load content from the specified path
+  // For simplicity, I'll just set some text content in this example
+  var overlayContent = document.createElement('div');
+  overlayContent.classList.add('overlay-content');
+
+  // Create an iframe element with specified width and height
+  var iframe = document.createElement('iframe');
+  iframe.src = path;
+  iframe.width = '595px';
+  iframe.height = '842px';
+
+  overlayContent.appendChild(iframe);
+  overlay.appendChild(overlayContent);
+}
+
+});
+
+    </script>
+  </body>
+</html>

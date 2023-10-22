@@ -1,0 +1,144 @@
+.software-engineering {
+  background-color: #fbfff1;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.software-engineering .div {
+  background-color: #fbfff1;
+  width: 100%;
+  height: 1024px;
+  position: relative;
+}
+
+.software-engineering .projects-container {
+  position: absolute;
+  width: 527px;
+  height: 534px;
+  top: 334px;
+  left: 446px;
+  background-color: #fbfff1;
+}
+
+/* Add styles for the overlay */
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.overlay-content {
+  width: 595px; /* Set the width of the overlay content */
+  height: 842px; /* Set the height of the overlay content */
+  background-color: #fff; /* Set the background color of the overlay content if needed */
+  /* Add any other styles you need for the overlay content */
+  z-index: inherit;
+}
+
+/* Add hover effect for project cards */
+.software-engineering .project:hover {
+  transform: scale(1.05); /* Increase the size of the card on hover */
+  transition: transform 0.3s ease; /* Add a smooth transition effect */
+}
+
+.software-engineering .ur-guard {
+  position: relative;
+  width: 470px;
+  height: 457px;
+  top: 38px;
+  left: 24px;
+}
+
+.software-engineering .overlap-group {
+  position: relative;
+  width: 496px;
+  height: 517px;
+  top: -30px;
+}
+
+.software-engineering .urguard-card {
+  position: absolute;
+  width: 377px;
+  height: 517px;
+  top: 0;
+  left: 119px;
+  object-fit: cover;
+}
+
+.software-engineering .text-wrapper {
+  position: absolute;
+  top: 304px;
+  left: 70px;
+  text-shadow: 0px 0px 4px #fbfff1;
+  /* -webkit-text-stroke: 5px #ffffff80; */
+  font-family: "Satoshi Variable-Medium", Helvetica;
+  font-weight: 500;
+  color: #000000;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.software-engineering .urguard-guardian-on {
+  position: absolute;
+  top: 203px;
+  left: 0;
+  font-family: "Satoshi Variable-Black", Helvetica;
+  font-weight: 900;
+  color: #ff3401;
+  font-size: 40px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.software-engineering .div-2 {
+  position: absolute;
+  width: 860px;
+  height: 122px;
+  top: 87px;
+  left: 98px;
+}
+
+.software-engineering .text-wrapper-2 {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  text-shadow: 0px 4px 4px #00000040;
+  font-family: "Satoshi Variable-MediumItalic", Helvetica;
+  font-weight: 500;
+  font-style: italic;
+  color: #ff3401;
+  font-size: 90px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.software-engineering .text-wrapper-3 {
+  position: absolute;
+  top: 0;
+  left: 363px;
+  text-shadow: 0px 4px 4px #00000040;
+  font-family: "Satoshi Variable-Bold", Helvetica;
+  font-weight: 700;
+  color: #ff3401;
+  font-size: 90px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.software-engineering .vector {
+  position: absolute;
+  width: 468px;
+  height: 44px;
+  top: 142px;
+  left: 992px;
+}

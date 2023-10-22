@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="globals.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Cloud Computing</title>
+  </head>
+  <body>
+    <div class="cloud-computing">
+      <div class="div">
+        <div class="projects-container">
+          <div class="cloud-infra project" data-overlay="OVERLAYcloudinfra/index.html">
+            <div class="overlap-group">
+              <img class="cloudinfra-card" src="img/cloudinfra-card.png" />
+              <p class="text-wrapper">for Real-time Analytics and Big Data</p>
+              <div class="text-wrapper-2">cloud Infrastructure design</div>
+            </div>
+          </div>
+          <div class="sync-cloud project" data-overlay="OVERLAYsynccloud/index.html">
+            <div class="overlap">
+              <img class="sync-cloud-card" src="img/sync-cloud-card.png" />
+              <div class="text-wrapper-3">synch gallery to S3</div>
+              <div class="automatic-sync-phone">Automatic sync<br />phone to cloud</div>
+            </div>
+          </div>
+        </div>
+        <div id="overlay" class="overlay">
+          <!-- Content of the overlay will be loaded dynamically here -->
+        </div>
+        <div class="div-2">
+          <div class="text-wrapper-4">Cloud</div>
+          <div class="text-wrapper-5">Computing</div>
+        </div>
+        <img class="vector" src="img/vector-6.svg" />
+      </div>
+    </div>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+  // Get the overlay element
+  var overlay = document.getElementById('overlay');
+
+  // Get all elements with class name '.project'
+  var projects = document.querySelectorAll('.cloud-computing .project');
+
+  // Add click event listener to each project element
+  projects.forEach(function (project) {
+    project.addEventListener('click', function () {
+      // Get the corresponding overlay path
+      var overlayPath = project.getAttribute('data-overlay');
+
+      // Load overlay content dynamically
+      loadOverlayContent(overlayPath);
+
+      // Show the overlay
+      overlay.style.display = 'flex';
+    });
+  });
+
+  // Add click event listener to close the overlay when clicking outside of it
+  overlay.addEventListener('click', function (event) {
+    if (event.target === overlay) {
+      // Hide the overlay
+      overlay.style.display = 'none';
+    }
+  });
+
+  function loadOverlayContent(path) {
+  // Clear the previous content
+  overlay.innerHTML = '';
+
+  // You can use AJAX or other methods to load content from the specified path
+  // For simplicity, I'll just set some text content in this example
+  var overlayContent = document.createElement('div');
+  overlayContent.classList.add('overlay-content');
+
+  // Create an iframe element with specified width and height
+  var iframe = document.createElement('iframe');
+  iframe.src = path;
+  iframe.width = '595px';
+  iframe.height = '842px';
+
+  overlayContent.appendChild(iframe);
+  overlay.appendChild(overlayContent);
+}
+
+});
+
+    </script>
+
+  </body>
+</html>
