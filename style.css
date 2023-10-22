@@ -598,3 +598,24 @@
   letter-spacing: 0;
   line-height: normal;
 }
+
+ /* Default style for the message */
+ .mobile-message {
+  display: none; /* Initially hide the message */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  z-index: 9999;
+}
+
+/* Media query for screens below 800px width */
+@media (max-width: 800px) {
+  .mobile-message {
+    display: block; /* Show the message */
+  }
+}
