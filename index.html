@@ -136,8 +136,7 @@
             overlay.addEventListener('click', () => {
                 overlay.style.display = 'none';
             });
-            // Check if the user is on a mobile device
-            if (/Mobi|Android/i.test(navigator.userAgent)) {
+            if (window.innerWidth < 800) {
               // Display a message for mobile users
               var message = document.createElement('div');
               message.innerHTML =
@@ -151,7 +150,7 @@
               message.style.backgroundColor = '#fff';
               message.style.border = '1px solid #ccc';
               message.style.zIndex = '9999';
-
+    
               document.body.appendChild(message);
             }
         });
