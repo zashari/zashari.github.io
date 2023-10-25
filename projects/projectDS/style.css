@@ -1,3 +1,7 @@
+body{
+  width: 100%;
+}
+
 .data-science {
   background-color: #fbfff1;
   display: flex;
@@ -373,4 +377,196 @@
   font-size: 90px;
   letter-spacing: 0;
   line-height: normal;
+}
+
+/* Media query for screens below 1240px width */
+@media (max-width: 1240px) {
+
+  .data-science.overlap-wrapper{
+    width: 100%;
+    left: 0;
+    top: 0;
+  }
+
+  .data-science .overlap-4{
+    width: 100%;
+  }
+
+  .data-science .text-wrapper-6{
+    font-size: 60px;
+    left: 0;
+  }
+
+  .data-science .text-wrapper-7{
+    font-size: 60px;
+    left: 130px;
+  }
+
+  .data-science .vector{
+    width: 740px;
+    left: 500px;
+    top: 113px;
+  }
+
+  .data-science .projects-container{
+    width: 1100px;
+    top: 276px;
+    left: 70px;
+  }
+
+  .data-science .multi-image{
+    width: 401px;
+    height: 437px;
+    top: 26px;
+    left: 12px;
+  }
+
+  .data-science .overlap {
+    position: relative;
+    width: 457px;
+    height: 497px;
+    top: -30px;
+  }
+
+  .data-science .img{
+    width: 327px;
+    height: 467px;
+    top: 0;
+    left: 100px;
+  }
+
+  .data-science .multi-class-image{
+    font-size: 30px;
+  }
+
+  .data-science .text-wrapper-5{
+    top: 280px;
+    left: 14px;
+    font-size: 15px;
+  }
+
+  .data-science .sentimentanalysis{
+    width: 401px;
+    height: 437px;
+    top: 26px;
+    left: 732px;
+  }
+
+  .data-science .overlap-3{
+    width: 457px;
+    height: 497px;
+    top: -30px;
+    left: -60px;
+  }
+
+  .data-science .SBX-card{
+    width: 327px;
+    height: 467px;
+    top: 0;
+    left: 100px;
+  }
+
+  .data-science .sentiment-analysis{
+    left: 25px;
+    font-size: 30px;
+  }
+
+  .data-science .text-wrapper-4{
+    top: 280px;
+    left: 30px;
+    font-size: 15px;
+  }
+  
+  .data-science .time-series{
+    width: 401px;
+    height: 437px;
+    top: 587px;
+    left: 12px;
+  }
+
+  .data-science .time-series-2{
+    left: 30px;
+    font-size: 30px;
+  }
+
+  .data-science .text-wrapper-3{
+    top: 265px;
+    left: 71px;
+    font-size: 15px;
+  }
+
+  .data-science .customer-churn{
+    width: 401px;
+    height: 437px;
+    top: 587px;
+    left: 732px;
+  }
+
+  .data-science .overlap-2{
+    width: 457px;
+    height: 497px;
+    top: -20px;
+    left: -60px;
+  }
+
+  .data-science .time-series-card{
+    width: 327px;
+    height: 467px;
+    top: 0;
+    left: 100px;
+  }
+
+  .data-science .churn-prediction{
+    left: 25px;
+    font-size: 30px;
+  }
+
+  .data-science .p{
+    top: 250px;
+    left: 40px;
+    font-size: 15px;
+  }
+
+  .data-science .ontime-vs-late{
+    left: 25px;
+    font-size: 30px;
+  }
+
+  .data-science .text-wrapper-2{
+    top: 275px;
+    left: 40px;
+    font-size: 15px;
+  }
+
+  .data-science .fortnite{
+    width: 401px;
+    height: 437px;
+    top: 1148px;
+    left: 732px;
+  }
+
+  .data-science .overlap-group{
+    width: 457px;
+    height: 497px;
+    top: -30px;
+    left: -60px;
+  }
+  
+  .data-science .fortnite-card{
+    width: 327px;
+    height: 467px;
+    top: 0;
+    left: 100px;
+  }
+
+  .data-science .EDAFN{
+    left: 25px;
+    font-size: 30px;
+  }
+
+  .data-science .text-wrapper{
+    top: 266px;
+    left: 40px;
+    font-size: 15px;
+  }
 }
