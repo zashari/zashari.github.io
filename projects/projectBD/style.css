@@ -148,23 +148,49 @@
   .business-development .div-2 {
     width: 914px;
     height: 122px;
-    top: 87px;
+    top: 120px;
     left: 7.90%;
   }
 
   .business-development .text-wrapper-2 {
-    font-size: 90px;
+    font-size: 60px;
   }
 
   .business-development .text-wrapper-3 {
-    left: 373px;
-    font-size: 90px;
+    left: 253px;
+    font-size: 60px;
   }
 
   .business-development .vector {
     width: 404px;
     height: 44px;
     top: 142px;
-    left: 1056px;
+    left: 856px;
   }
+
+  .business-development .projects-container{
+    width: 527px;
+    height: 534px;
+    top: 295px;
+    left: 400px;
+  }
+
+  .business-development .overlap-group{
+    width: 401px;
+    height: 437px;
+  }
+
+  .business-development .wayst-card{
+    width: 377px;
+    height: 437px;
+  }
+
+  .business-development .WAYST-waste{
+    font-size: 30px;
+    top: 150px;
+  }
+  .business-development .text-wrapper{
+    top: 225px;
+  }
+
 }
