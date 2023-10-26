@@ -172,7 +172,7 @@
 
 .home .projects {
   position: absolute;
-  width: 1450px;
+  width: 100%;
   height: 1024px;
   top: 0;
   left: 0%;
@@ -188,7 +188,7 @@
 
 .home .overlap-3 {
   position: relative;
-  width: 1500px;
+  width: 100%;
   left: 0%;
   height: 1024px;
   background-color: #fbfff1;
@@ -696,21 +696,26 @@
 }
 
 /* Media query for screens below 1240px width */
-@media (max-width: 1240px) {
+@media only screen and (min-width: 1240px) and (max-width: 1367px) {
+
+  .div{
+    background-color: #fbfff1;
+    left: 0px;
+  }
   /* Home */
   .home .text-wrapper-18{
     font-size: 70px;
   }
 
   .home .text-wrapper-17{
-    font-size: 100px;
+    font-size: 120px;
   }
 
   .home .panah{
     width: 200px;
     height: 600px;
-    top: 180px;
-    left: 70%;
+    top: 190px;
+    left: 85%;
   }
 
   .home .text-wrapper-16{
@@ -799,7 +804,7 @@
     width: 399px;
     height: 800px;
     top: 85px;
-    left: 48.33%;
+    left: 60%;
   }
 
   .home .overlap-5{
@@ -851,11 +856,15 @@
 
   /* Projects */
 
+  .home .projects{
+    width: 100%;
+  }
+
   .home .div-wrapper{
     width: 427px;
     height: 181px;
     top: 77px;
-    left: 760px;
+    left: 60%;
     background-image: url(./img/vector-3.svg);
     background-size: 100% 100%;
   }

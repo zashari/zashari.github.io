@@ -143,3 +143,28 @@
   top: 142px;
   left: 1056px;
 }
+
+@media only screen and (min-width: 1240px) and (max-width: 1367px) {
+  .business-development .div-2 {
+    width: 914px;
+    height: 122px;
+    top: 87px;
+    left: 7.90%;
+  }
+
+  .business-development .text-wrapper-2 {
+    font-size: 90px;
+  }
+
+  .business-development .text-wrapper-3 {
+    left: 373px;
+    font-size: 90px;
+  }
+
+  .business-development .vector {
+    width: 404px;
+    height: 44px;
+    top: 142px;
+    left: 1056px;
+  }
+}
