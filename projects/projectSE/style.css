@@ -1,10 +1,17 @@
+body{
+  background-color: #fbfff1;
+}
+
 .software-engineering {
   background-color: #fbfff1;
   display: flex;
   flex-direction: row;
   justify-content: center;
   width: 100%;
+  max-width: 1024px;
   height: 100vh;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .software-engineering .div {
@@ -18,8 +25,8 @@
   position: absolute;
   width: 527px;
   height: 534px;
-  top: 334px;
-  left: 446px;
+  top: 317px;
+  left: 232px;
   background-color: #fbfff1;
 }
 
@@ -84,7 +91,7 @@
   font-family: "Satoshi Variable-Medium", Helvetica;
   font-weight: 500;
   color: #000000;
-  font-size: 20px;
+  font-size: 1.125em;
   letter-spacing: 0;
   line-height: normal;
 }
@@ -96,7 +103,7 @@
   font-family: "Satoshi Variable-Black", Helvetica;
   font-weight: 900;
   color: #ff3401;
-  font-size: 40px;
+  font-size: 2.5em;
   letter-spacing: 0;
   line-height: normal;
 }
@@ -106,7 +113,7 @@
   width: 860px;
   height: 122px;
   top: 87px;
-  left: 98px;
+  left: 4px;
 }
 
 .software-engineering .text-wrapper-2 {
@@ -118,7 +125,7 @@
   font-weight: 500;
   font-style: italic;
   color: #ff3401;
-  font-size: 90px;
+  font-size: 5.7em;
   letter-spacing: 0;
   line-height: normal;
 }
@@ -131,71 +138,15 @@
   font-family: "Satoshi Variable-Bold", Helvetica;
   font-weight: 700;
   color: #ff3401;
-  font-size: 90px;
+  font-size: 5.7em;
   letter-spacing: 0;
   line-height: normal;
 }
 
 .software-engineering .vector {
   position: absolute;
-  width: 468px;
+  width: 110px;
   height: 44px;
   top: 142px;
-  left: 992px;
-}
-
-
-@media only screen and (min-width: 1240px) and (max-width: 1367px) {
-
-  .software-engineering .div-2{
-    width: 860px;
-    height: 122px;
-    top: 60px;
-    left: 7.90%;
-  }
-
-  .software-engineering .text-wrapper-3{
-    font-size: 60px;
-    left: 250px;
-  }
-
-  .software-engineering .text-wrapper-2{
-    font-size: 60px;
-
-  }
-
-  .software-engineering .vector{
-    width: 468px;
-    top: 90px;
-    left: 800px;
-  }
-
-  .software-engineering .projects-container{
-    width: 527px;
-    height: 534px;
-    top: 234px;
-    left: 380px;
-  }
-
-  .software-engineering .overlap-group{
-     width: 401px;
-    height: 437px;
-  }
-
-  .software-engineering .urguard-card{
-    width: 377px;
-    height: 437px;
-  }
-
-  .software-engineering .urguard-guardian-on{
-    top: 170px;
-    left: 0;
-    font-size: 30px;
-  }
-
-  .software-engineering .text-wrapper{
-    top: 245px;
-  }
-
-
+  left: 898px;
 }

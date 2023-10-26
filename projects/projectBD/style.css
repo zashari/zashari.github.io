@@ -1,15 +1,23 @@
+body{
+  background-color: #fbfff1;
+}
+
 .business-development {
   background-color: #fbfff1;
   display: flex;
   flex-direction: row;
   justify-content: center;
   width: 100%;
+  max-width: 1024px;
+  height: 100vh;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .business-development .div {
   background-color: #fbfff1;
-  width: 1440px;
-  height: 1024px;
+  width: 100%;
+  height: 100%;
   position: relative;
 }
 
@@ -18,7 +26,7 @@
   width: 527px;
   height: 534px;
   top: 295px;
-  left: 456px;
+  left: 197px;
   background-color: #fbfff1;
 }
 
@@ -84,7 +92,7 @@
   font-family: "Satoshi Variable-Medium", Helvetica;
   font-weight: 500;
   color: #000000;
-  font-size: 20px;
+  font-size: 1.125em;
   letter-spacing: 0;
   line-height: normal;
 }
@@ -96,7 +104,7 @@
   font-family: "Satoshi Variable-Black", Helvetica;
   font-weight: 900;
   color: #ff3401;
-  font-size: 40px;
+  font-size: 2.5em;
   letter-spacing: 0;
   line-height: normal;
 }
@@ -106,7 +114,7 @@
   width: 914px;
   height: 122px;
   top: 87px;
-  left: 98px;
+  left: 11px;
 }
 
 .business-development .text-wrapper-2 {
@@ -118,7 +126,7 @@
   font-weight: 500;
   font-style: italic;
   color: #ff3401;
-  font-size: 90px;
+  font-size: 5.7em;
   letter-spacing: 0;
   line-height: normal;
 }
@@ -131,66 +139,16 @@
   font-family: "Satoshi Variable-Bold", Helvetica;
   font-weight: 700;
   color: #ff3401;
-  font-size: 90px;
+  font-size: 5.7em;
   letter-spacing: 0;
   line-height: normal;
 }
 
 .business-development .vector {
   position: absolute;
+  display: none;
   width: 404px;
   height: 44px;
   top: 142px;
   left: 1056px;
-}
-
-@media only screen and (min-width: 1240px) and (max-width: 1367px) {
-  .business-development .div-2 {
-    width: 914px;
-    height: 122px;
-    top: 120px;
-    left: 7.90%;
-  }
-
-  .business-development .text-wrapper-2 {
-    font-size: 60px;
-  }
-
-  .business-development .text-wrapper-3 {
-    left: 253px;
-    font-size: 60px;
-  }
-
-  .business-development .vector {
-    width: 404px;
-    height: 44px;
-    top: 142px;
-    left: 856px;
-  }
-
-  .business-development .projects-container{
-    width: 527px;
-    height: 534px;
-    top: 295px;
-    left: 400px;
-  }
-
-  .business-development .overlap-group{
-    width: 401px;
-    height: 437px;
-  }
-
-  .business-development .wayst-card{
-    width: 377px;
-    height: 437px;
-  }
-
-  .business-development .WAYST-waste{
-    font-size: 30px;
-    top: 150px;
-  }
-  .business-development .text-wrapper{
-    top: 225px;
-  }
-
 }
