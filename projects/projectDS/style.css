@@ -27,7 +27,7 @@ body{
 .data-science .projects-container {
   position: absolute;
   width: 1160px;
-  height: 1636px;
+  height: 1809px;
   top: 276px;
   left: -11%;
   background-color: #fbfff1;
@@ -61,6 +61,61 @@ body{
   transition: transform 0.3s ease; /* Add a smooth transition effect */
 }
 
+
+.data-science .data-camp {
+  position: absolute;
+  width: 882px;
+  height: 129px;
+  top: 1660px;
+  left: 264px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 30px #090c9b4c;
+  background: linear-gradient( 180deg, rgba(255, 52, 1, 0.58) 0%, rgba(254.86, 60.77, 12.01, 0.49) 2.08%, rgba(251.81, 251.81, 251.81, 0.97) 47.46%, rgba(254.6, 72.05, 24.7, 0.49) 99.98%, rgba(251, 255, 241, 0.97) 99.99%, rgba(1.44, 2.84, 69.26, 0.47) 100% );  
+}
+
+.data-science .explore-d-chere {
+  position: relative;
+  width: 674px;
+  height: 62px;
+  top: 41px;
+  left: 91px;
+}
+
+.data-science .here {
+  position: absolute;
+  top: 6px;
+  left: 602px;
+  font-family: "Satoshi Variable-Black", Helvetica;
+  font-weight: 900;
+  color: #ff3401;
+  font-size: 2em;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.data-science .DC {
+  position: absolute;
+  top: 6px;
+  left: 443px;
+  font-family: "Satoshi Variable-Black", Helvetica;
+  font-weight: 900;
+  color: #0dae66;
+  font-size: 2em;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.data-science .explore {
+  position: absolute;
+  top: 6px;
+  left: 0;
+  font-family: "Satoshi Variable-Black", Helvetica;
+  font-weight: 900;
+  color: #ff3401;
+  font-size: 2em;
+  letter-spacing: 0;
+  line-height: normal;
+}
 
 
 
@@ -98,7 +153,7 @@ body{
   font-family: "Satoshi Variable-Medium", Helvetica;
   font-weight: 500;
   color: #000000;
-  font-size: 0.125em;
+  font-size: 1.125em;
   letter-spacing: 0;
   line-height: normal;
 }
