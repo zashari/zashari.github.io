@@ -727,20 +727,35 @@ body{
 
 /* Media query for screens below 800px width */
 @media (max-width: 800px) {
+/* make all content blured */
+  .home {
+    filter: blur(10px);
+  } 
+/* Display the mobile messages */
+.mobile-message,
+.mobile-message2 {
+  display: block;
+  z-index: 999;
+}
+
   body{
     background-color: #fbfff1;
   }
   .home {
     background-color: #fbfff1;
+    width: 100%;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .home .text-wrapper-18 {
     display: none;
   }
   .home .text-wrapper-17 {
-    top: 0;
-    left: 0;
-    font-size: 4em;
+    top: 0%;
+    left: 0%;
+    font-size: 3em;
   }
 
   .home .panah {
@@ -767,7 +782,7 @@ body{
   }
 
   .home .div-2 {
-    width: 358px;
+    width: 271px;
     height: 345px;
     top: 38%;
     left: 21%;
@@ -864,6 +879,7 @@ body{
     text-align: center;
     top: 651px;
     left: 9%;
+    width: 522px;
   }
 
   .home .python-r-java {
