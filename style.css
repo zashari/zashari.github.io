@@ -24,7 +24,7 @@ body{
 .home .overlap {
   position: absolute;
   width: 100%;
-  height: 2015px;
+  height: 100vh;;
   top: 1800px;
   left: 0%;
 }
@@ -293,6 +293,11 @@ body{
   left: 0;
 }
 
+.home .vectorMobile{
+  display: none;
+
+}
+
 .home .div-wrapper {
   position: absolute;
   width: 377px;
@@ -376,6 +381,10 @@ body{
   height: 611px;
   top: 0;
   left: 0%;
+}
+
+.home .photo-of-me-mobile{
+  display: none;
 }
 
 
@@ -581,6 +590,17 @@ body{
   right: 11%;
 }
 
+.home .panahMobile{
+  display: none;
+}
+.home .panahMobile2{
+  display: none;
+}
+
+.home .lineMobile{
+  display: none;
+}
+
 .home .overlap-8 {
   position: absolute;
   width: 74px;
@@ -707,49 +727,257 @@ body{
 
 /* Media query for screens below 800px width */
 @media (max-width: 800px) {
-  .mobile-message, .mobile-message2 {
-    display: block; 
+  body{
+    background-color: #fbfff1;
   }
-
   .home {
-    filter: blur(5px); 
-    overflow: hidden; 
+    background-color: #fbfff1;
   }
 
-  .home .div {
-    height: auto; 
+  .home .text-wrapper-18 {
+    display: none;
+  }
+  .home .text-wrapper-17 {
+    top: 0;
+    left: 0;
+    font-size: 4em;
+  }
+
+  .home .panah {
+    display: none;
+  }
+
+  .home .panahMobile{
+    display: block;
+    position: absolute;
+    top: 268px;
+    left: 166px;
+  }
+
+  .home .text-wrapper-15 {
+    display: none;
+  }
+  
+  .home .line {
+    display: none;
+  }
+
+  .home .about-me {
+      top: 1165px;
+  }
+
+  .home .div-2 {
+    width: 358px;
+    height: 345px;
+    top: 38%;
+    left: 21%;
+  }
+
+  .home .lineMobile{
+    display: block;
+    position: absolute;
+    top: 123px;
+    left: 91px;
+  }
+
+  .home .overlap-5 {
+    top: -658px;
+    left: -46%;
+    z-index: 1;
+    height: 78px;
+  }
+
+  .home .photo-of-me{
+    display: none;
+  }
+  .home .text-wrapper-12 {
+    top: 43px;
+    left: 10%;
+  }
+
+  .home .text-wrapper-11 {
+    top: 0;
+    left: 67%;
+  }
+  .home .text-wrapper-10 {
+    top: 0;
+    left: 29%;
+  }
+  .home .text-wrapper-9 {
+    top: 0;
+    left: 0;
+  }
+
+  .home .text-wrapper-8 {
+    top: 43px;
+    left: 51%;
   }
 
   .home .overlap {
-    top: auto;
-    left: auto;
+    top: 2343px;
   }
 
-  .home .certifications,
-  .home .projects,
-  .home .about-me,
-  .home .div-2 {
-    left: 0;
-    width: 100%;
+  .home .overlap-6 {
+    width: 558px;
+    height: 474px;
+    left: 6.28%
   }
 
-  .home .overlap-group,
-  .home .overlap-3,
-  .home .overlap-4,
-  .home .overlap-5,
-  .home .overlap-6,
-  .home .overlap-7,
-  .home .overlap-8,
-  .home .overlap-9 {
-    width: 100%;
+  .home .about-me-2 br{
+    display: none;
+  }
+  .home .overlap-group-3 {
+    width: 292px;
+    height: 96px;
+    left: 23%;
   }
 
-  .slider-wrapper {
-    top: 0;
-    max-width: 100%;
+  .home .about-me-2 {
+    font-size: 4em;
   }
 
-  .slider img {
-    flex: 1 0 100%;
+  .home .ellipse {
+    top: -50px;
+    left: -17%;
+    transform: rotate(0deg);
+  }
+
+  .home .hello-i-m-a-computer {
+    top: 147px;
+    text-align: center;
+    left: 4%;
+    top: 334px;
+  }
+
+  .home .img {
+    width: 399px;
+    top: 557px;
+    left: 19%;
+  }
+
+  .home .text-wrapper-14 {
+    top: 586px;
+    left: 40%;
+  }
+
+  .home .overlap-7{
+    text-align: center;
+    top: 651px;
+    left: 9%;
+  }
+
+  .home .python-r-java {
+    left: 17%;
+  }
+
+  .home .photo-of-me-mobile{
+    display: block;
+    position: absolute;
+    top: 175px;
+    left: 210px;
+    height: 200px;
+    width: 200px;
+    border-radius: 207px;
+  }
+
+  .home .div-wrapper {
+    width: 277px;
+    height: 131px;
+    top: 77px;
+    left: 194px;
+  }
+
+  .home .text-wrapper-7 {
+    position: absolute;
+    top: 21px;
+    left: 10px;
+    font-size: 4em;
+  }
+
+  .home .vector {
+    display: none;
+  }
+
+  .home .overlap{
+    height: 100vh;
+  }
+
+  .home .text-wrapper-6 {
+    font-size: 2em;
+    top: -104px;
+    left: 138px;
+  }
+
+  .home .text-wrapper-5 {
+    font-size: 2em;
+    top: -49px;
+    left: 138px;
+  }
+
+  .home .text-wrapper-4 {
+    font-size: 2em;
+    top: 0px;
+    left: 138px;
+  }
+
+  .home .text-wrapper-3 {
+    font-size: 2em;
+    top: 54px;
+    left: 138px;
+  }
+
+  .home .vectorMobile{
+    position: absolute;
+    display: block;
+    width: 200px;
+    height: 200px;
+    top: -98px;
+    left: 383px;
+  }
+
+  .home .overlap-group-2{
+    top: 503px;
+    left: -22px;
+  }
+
+  .home .panahMobile2{
+    display: block;
+    position: absolute;
+    top: 798px;
+    left: 300px;
+  }
+
+  .home .certifications {
+    top: 982px;
+  }
+
+  .home .overlap-2{
+    top: 8px;
+    left: 38px;
+    width: 425px;
+    height: 151px;
+  }
+
+  .home .text-wrapper {
+    top: 64px;
+    font-size: 4em;
+  }
+
+  .home .text-wrapper-2 {
+    font-size: 3.5em;
+  }
+
+  .home .slider-wrapper{
+    max-width: 30rem;
+    top: 155px;
+  }
+
+  .home .slider-nav a {
+    width: 15px; /* Adjust the width as needed */
+    height: 15px; /* Adjust the height as needed */
+  }
+
+  .home .slider-nav{
+   bottom: -1.75rem;
   }
 }
