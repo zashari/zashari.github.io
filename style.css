@@ -79,7 +79,7 @@ body{
   width: 0.5rem;
   height: 0.5rem;
   border-radius: 50%;
-  background-color: #FF3401;
+  background-color: #090C9B;
   opacity: 0.75;
   transition: opacity ease 250ms;
 
@@ -156,7 +156,7 @@ body{
   top: 90px;
   font-family: "Satoshi Variable-Black", Helvetica;
   font-weight: 900;
-  color: #ff3401;
+  color: #090C9B;
   font-size: 6em;
   letter-spacing: 0;
   line-height: normal;
@@ -201,6 +201,7 @@ body{
   width: 100%;
   left: 0%;
   height: 100%;
+  top: 41px;
 }
 
 .home .overlap-group-2 {
@@ -232,7 +233,7 @@ body{
   font-family: "Satoshi Variable-BlackItalic", Helvetica;
   font-weight: 900;
   font-style: italic;
-  color: #ff3401;
+  color: #090C9B;
   font-size: 2.5em;
   letter-spacing: 0;
   line-height: normal;
@@ -261,7 +262,7 @@ body{
   font-family: "Satoshi Variable-BlackItalic", Helvetica;
   font-weight: 900;
   font-style: italic;
-  color: #ff3401;
+  color: #090C9B;
   font-size: 2.5em;
   letter-spacing: 0;
   line-height: normal;
@@ -315,7 +316,7 @@ body{
     text-shadow: 0px 0px 44px #fbfff1;
     font-family: "Satoshi Variable-Black", Helvetica;
     font-weight: 900;
-    color: #ff3401;
+    color: #090C9B;
     font-size: 6em;
     letter-spacing: 0;
     line-height: normal;
@@ -475,11 +476,11 @@ body{
 }
 .home .ellipse {
   position: absolute;
-  width: 394px;
-  height: 189px;
-  top: 30px;
-  left: 0%;
-  background-color: #d9d9d9;
+  width: 311px;
+  height: 130px;
+  top: 54px;
+  left: -3%;
+  background-color: #00000094;
   border-radius: 197.06px/94.55px;
   transform: rotate(-23deg);
   filter: blur(37px);
@@ -491,7 +492,7 @@ body{
   left: 0%;
   font-family: "Satoshi Variable-Black", Helvetica;
   font-weight: 900;
-  color: #ff3401;
+  color: #090C9B;
   font-size: 6em;
   letter-spacing: 0;
   line-height: normal;
@@ -558,7 +559,7 @@ body{
   left: 5.28%;
   font-family: "Satoshi Variable-Bold", Helvetica;
   font-weight: 700;
-  color: #ff3401;
+  color: #090C9B;
   font-size: 2.5em;
   letter-spacing: 0;
   line-height: normal;
@@ -578,16 +579,22 @@ body{
   position: absolute;
   width: 940px;
   height: 717px;
-  top: 1px;
+  top: 33px;
   left: 6%;
+}
+
+.home .computer{
+  position: absolute;
+  height: 437px;
+  left: 300px;
+  top: 104px;
 }
 
 .home .panah {
   position: absolute;
-  width: 180px;
-  height: 493px;
-  top: 169px;
-  right: 11%;
+  top: 484px;
+  right: 6%;
+  z-index: 1;
 }
 
 .home .panahMobile{
@@ -610,6 +617,7 @@ body{
 }
 
 .home .line {
+  display: none;
   position: absolute;
   width: 74px;
   height: 3px;
@@ -620,10 +628,10 @@ body{
 .home .text-wrapper-15 {
   position: absolute;
   top: 630px;
-  left: 0.76%;
+  left: 0%;
   font-family: "Satoshi Variable-Medium", Helvetica;
   font-weight: 500;
-  color: #000000;
+  color: #090C9B;
   font-size: 1.5em;
   letter-spacing: 0;
   line-height: normal;
@@ -661,7 +669,7 @@ body{
   text-shadow: 0px 4px 4px #00000040;
   font-family: "Satoshi Variable-Black", Helvetica;
   font-weight: 900;
-  color: #ff3401;
+  color: #090C9B;
   font-size: 6em;
   letter-spacing: 0;
   line-height: normal;
@@ -676,7 +684,7 @@ body{
   text-shadow: 0px 4px 4px #00000040;
   font-family: "Satoshi Variable-Medium", Helvetica;
   font-weight: 500;
-  color: #ff3401;
+  color: #090C9B;
   font-size: 3em;
   letter-spacing: 0;
   line-height: normal;
@@ -697,7 +705,7 @@ body{
   box-shadow: #000000f5 0px 0px 100px;
   padding: 20px;
   background-color: #fbfff1;
-  color: #ff3401;
+  color: #090C9B;
   border: 1px solid #ccc;
   border-radius: 10px;
   z-index: 9999;
@@ -717,7 +725,7 @@ body{
   font-size: 10px;
   padding: 20px;
   background-color: #fbfff1;
-  color: #ff3401;
+  color: #090C9B;
   border: 1px solid #ccc;
   border-radius: 10px;
   z-index: 9999;
@@ -728,15 +736,14 @@ body{
 /* Media query for screens below 800px width */
 @media (max-width: 800px) {
 /* make all content blured */
-  .home {
+  /* .home {
     filter: blur(10px);
   } 
-/* Display the mobile messages */
-.mobile-message,
-.mobile-message2 {
-  display: block;
-  z-index: 999;
-}
+  .mobile-message,
+  .mobile-message2 {
+    display: block;
+    z-index: 999;
+  } */
 
   body{
     background-color: #fbfff1;
@@ -747,14 +754,22 @@ body{
     max-width: 800px;
     margin-left: auto;
     margin-right: auto;
+    margin: 0 auto; 
+  }
+
+  .home .overlap-9 {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .home .text-wrapper-18 {
     display: none;
   }
   .home .text-wrapper-17 {
+    position: absolute;
     top: 0%;
-    left: 0%;
+    left: 1.5%;
     font-size: 3em;
   }
 
@@ -766,7 +781,7 @@ body{
     display: block;
     position: absolute;
     top: 268px;
-    left: 166px;
+    left: 139px;
   }
 
   .home .text-wrapper-15 {
@@ -781,23 +796,39 @@ body{
       top: 1165px;
   }
 
+  .home .zashari-profile{
+    position: relative;
+  }
+  
+
   .home .div-2 {
-    width: 271px;
-    height: 345px;
-    top: 38%;
-    left: 21%;
+    /* position: absolute; */
+    width: 298px;
+    height: 384px;
+    top: 42%;
+    left: 0;
+    margin: 0 auto;
+    right: 0;
+    text-align: center;
   }
 
   .home .lineMobile{
     display: block;
     position: absolute;
-    top: 123px;
-    left: 91px;
+    top: 86px;
+    left: 58px;
+  }
+
+  .home .overlap-4{
+    width: 293px;
+    height: 74px;
+    top: -592px;
+    left: 26.33%;
   }
 
   .home .overlap-5 {
-    top: -658px;
-    left: -46%;
+    top: 0%;
+    left: 0%;
     z-index: 1;
     height: 78px;
   }
