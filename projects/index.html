@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="globals.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Projects</title>
+  </head>
+  <body>
+    <div class="projects">
+      <div class="overlap-group-wrapper">
+        <div class="overlap-group">
+          <img class="star" src="img/star-7.svg" />
+          <div class="projects-lsit">
+            <div class="businessdevelopment">Business Development</div>
+            <a href="projectse/index.html">
+              <div class="softwareengineering">Software Engineering</div>
+            </a>
+            <a href="projectcc/index.html">
+              <div class="cloudcomputing">Cloud Computing</div>
+            </a>
+            <a href="projectds/index.html">
+              <div class="datascience">Data Science</div>
+            </a>
+          </div>
+          <div class="projecttext">Projects</div>
+          <a href="../index.html">
+            <div class="home">Back to home</div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const links = document.querySelectorAll('a[href="projects/index.html"]');
+    
+        links.forEach(link => {
+          link.addEventListener('click', function(e) {
+            e.preventDefault();
+            document.body.classList.add('fade-out');
+    
+            setTimeout(() => {
+              window.location.href = this.getAttribute('href');
+            }, 4000); // Duration matching CSS animation
+          });
+        });
+      });
+    </script>
+    
+    
+  </body>
+</html>

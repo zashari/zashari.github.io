@@ -3,82 +3,177 @@
   <head>
     <link rel="stylesheet" href="globals.css" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="preload">
     <title>Software Engineering</title>
   </head>
   <body>
-    <div class="software-engineering">
-      <div class="div">
-        <div class="projects-container">
-          <div class="ur-guard project" data-overlay="OVERLAYurguard/index.html">
-            <div class="overlap-group">
-              <img class="urguard-card" src="img/urguard-card.png" />
-              <div class="text-wrapper">self defense app</div>
-              <div class="urguard-guardian-on">UrGuard: Guardian<br />on Your Phone</div>
+    <div class="projects-se">
+      <div class="overlap-group-wrapper">
+        <div class="overlap-group">
+          <div class="projects-container">
+            <div class="plusfiller">
+              <div class="plus1">+</div>
+              <div class="plus2">+</div>
+              <div class="minus1">-</div>
+              <div class="minus2">-</div>
             </div>
+            <!-- box 3 -->
+            <div class="webv3">
+              <a href="https://github.com/zashari/zashari.me" target="_blank"rel="noopener noreferrer"> 
+                <div class="text-wrapper-22">Personal Website v3</div>
+                <div class="cover-container">
+                  <img class="cover" src="img/COVERwebv3.jpg" />
+                  <div class="description-container">
+                    <div class="descriptionbox">
+                      <p class="descriptiontext">
+                        The website has been transformed with a striking, responsive design. It now features vibrant colors and easy navigation,
+                        making it both visually appealing and user-friendly. This revamp enhances the overall experience, drawing in and retaining visitors with its engaging, intuitive layout.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <!-- box 2 -->
+            <div class="webv2">
+              <a href="https://github.com/zashari/website-V2" target="_blank"rel="noopener noreferrer"> 
+                <p class="text-wrapper-32">Personal Website v2</p>
+                <div class="cover-container">
+                  <img class="cover" src="img/COVERwebv2.jpg" />
+                  <div class="description-container">
+                    <div class="descriptionbox">
+                      <p class="descriptiontext">
+                        In the second iteration of my website, I've employed HTML, CSS, and JavaScript to create a fresh and contemporary look. 
+                        Launched in October 2023, the website is now hosted on GitHub Pages, providing a seamless platform for accessibility and showcasing the latest updates and improvements.
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <!-- box 1 -->
+            <div class="webv1">
+                <div class="text-wrapper-42">Personal Website v1</div>
+                <div class="cover-container">
+                  <img class="cover" src="img/COVERwebv1.jpg" />
+                  <div class="description-container">
+                    <div class="descriptionbox">
+                      <p class="descriptiontext">
+                        The initial version of my website was constructed using HTML, CSS, and JavaScript, with AWS providing essential support.
+                         CloudFront served as the CDN, and S3 handled storage. Unfortunately, all files have vanished from my AWS account,
+                      </p>
+                    </div>
+                  </div>
+                </div>
+            </div>
+
+            <div class="urguard">
+              <a href="https://www.notion.so/zakyashari/UrGuard-9c66f23ceeb94e4bb8939275b1d7c247" target="_blank"rel="noopener noreferrer"> 
+                <div class="text-wrapper-41">Guardian in Your Pocket</div>
+                <div class="text-wrapper-42">urguard</div>
+                <div class="cover-container">
+                  <img class="cover" src="img/COVERurguard.jpg" />
+                  <div class="description-container">
+                    <div class="descriptionbox">
+                      <p class="descriptiontext">
+                        UrGuard is the result of a collaborative effort with my teammates Tara, Faishal, and Ilham, developed as part of a school project over
+                        the course of seven days. This application is designed to enhance personal safety in sparsely populated public places, offering a range of
+                        features to provide peace of mind when navigating such environments.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <button class="panah-btn">
+                <img class="panahkanan" src="img/panahkanan.png" alt="Next" />
+                <img class="panahkiri" src="img/panahkiri.png" alt="Prev">
+            </button>
           </div>
+          <div class="overlap">
+            <img class="panah" src="img/panah.svg" />
+            <div class="projecttext">Projects</div>
+          </div>
+          <img class="star" src="img/star-7.svg" />
+          <div class="projects-list">
+            <a href="../projectbd/index.html">
+              <div class="businessdevelopment">Business Development</div>
+            </a>
+            <div class="softwareengineering">Software Engineering</div>
+            <a href="../projectcc/index.html">
+              <div class="cloudcomputing">Cloud Computing</div>
+            </a>
+            <a href="../projectds/index.html">
+              <div class="datascience">Data Science</div>
+            </a>
+          </div>
+          <a href="../../index.html">
+            <div class="home">Back to home</div>
+          </a>
         </div>
-        
-        <div id="overlay" class="overlay">
-          <!-- Content of the overlay will be loaded dynamically here -->
-        </div>
-        <div class="div-2">
-          <div class="text-wrapper-2">Software</div>
-          <div class="text-wrapper-3">Engineering</div>
-        </div>
-        <img class="vector" src="img/vector-7.svg" />
       </div>
     </div>
+
     <script>
-      document.addEventListener('DOMContentLoaded', function () {
-  // Get the overlay element
-  var overlay = document.getElementById('overlay');
+      document.addEventListener('DOMContentLoaded', function() {
+            var panahkanan = document.querySelector('.panahkanan');
+            var panahkiri = document.querySelector('.panahkiri');
+            var webv1= document.querySelector('.webv1');
+            var urguard = document.querySelector('.urguard');
+            var webv2 = document.querySelector('.webv2');
+            var webv3 = document.querySelector('.webv3');
+            var overlapGroup = document.querySelector('.overlap-group');
+            var overlapGroupWrapper = document.querySelector('.overlap-group-wrapper')
+            var projectContainer = document.querySelector('.projects-container')
+            var plusfiller = document.querySelector('.plusfiller')
+            // Initially hide panahkiri
+            panahkiri.style.display = 'none';
 
-  // Get all elements with class name '.project'
-  var projects = document.querySelectorAll('.software-engineering .project');
+            panahkanan.addEventListener('click', function() {
+                // Change visibility of panahkanan and panahkiri
+                panahkanan.style.display = 'none';
+                panahkiri.style.display = 'block';
 
-  // Add click event listener to each project element
-  projects.forEach(function (project) {
-    project.addEventListener('click', function () {
-      // Get the corresponding overlay path
-      var overlayPath = project.getAttribute('data-overlay');
+                // Change opacity and z-index for other elements
+                webv1.style.display = 'none';
+                webv2.style.display = 'none';
+                webv3.style.display = 'none';
+                plusfiller.style.display = 'none';
+                urguard.style.opacity = '1';
+                urguard.style.zIndex = '1';
 
-      // Load overlay content dynamically
-      loadOverlayContent(overlayPath);
+                // Set the height of overlapGroup to 300px
+                overlapGroup.style.cssText = 'height: 1400px !important;';
+                overlapGroupWrapper.style.cssText = 'height: 1500px !important;';
+                projectContainer.style.cssText = 'height: 543px !important;';
 
-      // Show the overlay
-      overlay.style.display = 'flex';
-    });
-  });
+                // For debugging purposes, log the new height to the console
+                console.log('New height:', overlapGroup.style.height);
+            });
 
-  // Add click event listener to close the overlay when clicking outside of it
-  overlay.addEventListener('click', function (event) {
-    if (event.target === overlay) {
-      // Hide the overlay
-      overlay.style.display = 'none';
-    }
-  });
+            panahkiri.addEventListener('click', function() {
+                // Reset visibility of panahkanan and panahkiri
+                panahkanan.style.display = 'block';
+                panahkiri.style.display = 'none';
 
-  function loadOverlayContent(path) {
-  // Clear the previous content
-  overlay.innerHTML = '';
-
-  // You can use AJAX or other methods to load content from the specified path
-  // For simplicity, I'll just set some text content in this example
-  var overlayContent = document.createElement('div');
-  overlayContent.classList.add('overlay-content');
-
-  // Create an iframe element with specified width and height
-  var iframe = document.createElement('iframe');
-  iframe.src = path;
-  iframe.width = '595px';
-  iframe.height = '842px';
-
-  overlayContent.appendChild(iframe);
-  overlay.appendChild(overlayContent);
-}
-
-});
-
+                // Reset opacity and z-index for other elements to initial state
+                webv1.style.opacity = '1';
+                webv1.style.zIndex = '1';
+                webv1.style.display ='block';
+                webv2.style.opacity = '1';
+                webv2.style.zIndex = '1';
+                webv2.style.display ='block';
+                webv3.style.opacity = '1';
+                webv3.style.zIndex = '1';
+                webv3.style.display ='block';
+                urguard.style.opacity = '0';
+                urguard.style.zIndex = '0';
+                overlapGroup.style.cssText = 'height: 2134px !important;';
+                
+            });
+      });
     </script>
   </body>
 </html>

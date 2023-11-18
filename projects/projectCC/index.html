@@ -3,90 +3,146 @@
   <head>
     <link rel="stylesheet" href="globals.css" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="preload">
     <title>Cloud Computing</title>
   </head>
   <body>
-    <div class="cloud-computing">
-      <div class="div">
-        <div class="projects-container">
-          <div class="cloud-infra project" data-overlay="OVERLAYcloudinfra/index.html">
-            <div class="overlap-group">
-              <img class="cloudinfra-card" src="img/cloudinfra-card.png" />
-              <p class="text-wrapper">for Real-time Analytics and Big Data</p>
-              <div class="text-wrapper-2">cloud Infrastructure design</div>
+    <div class="projects-cc">
+      <div class="overlap-group-wrapper">
+        <div class="overlap-group">
+          <div class="projects-container">
+            <div class="plusfiller">
+              <div class="plus1">+</div>
+              <div class="plus2">+</div>
+              <div class="minus1">-</div>
+              <div class="minus2">-</div>
             </div>
-          </div>
-          <div class="sync-cloud project" data-overlay="OVERLAYsynccloud/index.html">
-            <div class="overlap">
-              <img class="sync-cloud-card" src="img/sync-cloud-card.png" />
-              <div class="text-wrapper-3">synch gallery to S3</div>
-              <div class="automatic-sync-phone">Automatic sync<br />phone to cloud</div>
+
+            <!-- box 2 -->
+            <div class="cloudinfra">
+              <a href="https://www.notion.so/zakyashari/Cloud-Infrastructure-Design-Real-time-Analytics-and-Big-Data-1a567b903f7b44d0bc9b3381cc1784fe" target="_blank"rel="noopener noreferrer"> 
+                <div class="text-wrapper-31">for real-time analytics and big data</div>
+                <p class="text-wrapper-32">Cloud Infrastructure Design</p>
+                <div class="cover-container">
+                  <img class="cover" src="img/COVERcloudinfra.jpg" />
+                  <div class="description-container">
+                    <div class="descriptionbox">
+                      <p class="descriptiontext">
+                        In this project, we've created a scalable AWS architecture using serverless technologies to enable real-time streaming data analysis, 
+                        interactive queries, and dynamic insights visualization. Join us to unlock valuable data-driven insights without the hassle of infrastructure management
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </a>
             </div>
+
+            <!-- box 1 -->
+            <div class="sync">
+              <a href="https://www.notion.so/zakyashari/Cloud-Project-Sync-Mobile-Phone-Gallery-to-AWS-S3-Bucket-2ddff8a53da64a81a88a2b09fcf968c0" target="_blank"rel="noopener noreferrer"> 
+                <div class="text-wrapper-41">sync gallery to S3</div>
+                <div class="text-wrapper-42">Automatic Sync Phone to Cloud</div>
+                <div class="cover-container">
+                  <img class="cover" src="img/COVERsyncS3.jpg" />
+                  <div class="description-container">
+                    <div class="descriptionbox">
+                      <p class="descriptiontext">
+                        In this personal project, I aimed to reduce monthly expenses on Google storage by synchronizing my phone's gallery with AWS S3. 
+                        I created an HTML webpage to display the synchronized media, using AWS services including S3, Lambda, and CloudFront for cost-effective storage, 
+                        server-side processing, and low-latency content delivery. This project offers an economical alternative for personal media storage while harnessing the power of AWS's 
+                        scalable cloud services.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <button class="panah-btn">
+                <img class="panahkanan" src="img/panahkanan.png" alt="Next" />
+            </button>
           </div>
+          <div class="overlap">
+            <img class="panah" src="img/panah.svg" />
+            <div class="projecttext">Projects</div>
+          </div>
+          <img class="star" src="img/star-7.svg" />
+          <div class="projects-list">
+            <a href="../projectbd/index.html">
+              <div class="businessdevelopment">Business Development</div>
+            </a>
+            
+            <a href="../projectse/index.html">
+              <div class="softwareengineering">Software Engineering</div>
+            </a>
+
+            <div class="cloudcomputing">Cloud Computing</div>
+
+            <a href="../projectds/index.html">
+                <div class="datascience">Data Science</div>
+            </a>
+          </div>
+          <a href="../../index.html">
+            <div class="home">Back to home</div>
+          </a>
         </div>
-        <div id="overlay" class="overlay">
-          <!-- Content of the overlay will be loaded dynamically here -->
-        </div>
-        <div class="div-2">
-          <div class="text-wrapper-4">Cloud</div>
-          <div class="text-wrapper-5">Computing</div>
-        </div>
-        <img class="vector" src="img/vector-6.svg" />
       </div>
     </div>
 
-    <script>
-      document.addEventListener('DOMContentLoaded', function () {
-  // Get the overlay element
-  var overlay = document.getElementById('overlay');
+    <!-- <script>
+      document.addEventListener('DOMContentLoaded', function() {
+            var panahkanan = document.querySelector('.panahkanan');
+            var panahkiri = document.querySelector('.panahkiri');
+            var urbanVisualPollution = document.querySelector('.urbanvisualpollution');
+            var onTimeLate = document.querySelector('.ontimelate');
+            var newsclassification = document.querySelector('.newsclassification');
+            var sentimentanalysis = document.querySelector('.sentimentanalysis');
+            var churnprediction = document.querySelector('.churnprediction');
+            var timeseries = document.querySelector('.timeseries');
 
-  // Get all elements with class name '.project'
-  var projects = document.querySelectorAll('.cloud-computing .project');
+            // Initially hide panahkiri
+            panahkiri.style.display = 'none';
 
-  // Add click event listener to each project element
-  projects.forEach(function (project) {
-    project.addEventListener('click', function () {
-      // Get the corresponding overlay path
-      var overlayPath = project.getAttribute('data-overlay');
+            panahkanan.addEventListener('click', function() {
+                // Change visibility of panahkanan and panahkiri
+                panahkanan.style.display = 'none';
+                panahkiri.style.display = 'block';
 
-      // Load overlay content dynamically
-      loadOverlayContent(overlayPath);
+                // Change opacity and z-index for other elements
+                urbanVisualPollution.style.opacity = '0';
+                urbanVisualPollution.style.zIndex = '0';
+                newsclassification.style.opacity = '0';
+                newsclassification.style.zIndex = '0';
+                churnprediction.style.opacity = '0';
+                churnprediction.style.zIndex = '0';
+                onTimeLate.style.opacity = '1';
+                onTimeLate.style.zIndex = '1';
+                sentimentanalysis.style.opacity = '1';
+                sentimentanalysis.style.zIndex = '1';
+                timeseries.style.opacity = '1';
+                timeseries.style.zIndex = '1';
+            });
 
-      // Show the overlay
-      overlay.style.display = 'flex';
-    });
-  });
+            panahkiri.addEventListener('click', function() {
+                // Reset visibility of panahkanan and panahkiri
+                panahkanan.style.display = 'block';
+                panahkiri.style.display = 'none';
 
-  // Add click event listener to close the overlay when clicking outside of it
-  overlay.addEventListener('click', function (event) {
-    if (event.target === overlay) {
-      // Hide the overlay
-      overlay.style.display = 'none';
-    }
-  });
-
-  function loadOverlayContent(path) {
-  // Clear the previous content
-  overlay.innerHTML = '';
-
-  // You can use AJAX or other methods to load content from the specified path
-  // For simplicity, I'll just set some text content in this example
-  var overlayContent = document.createElement('div');
-  overlayContent.classList.add('overlay-content');
-
-  // Create an iframe element with specified width and height
-  var iframe = document.createElement('iframe');
-  iframe.src = path;
-  iframe.width = '595px';
-  iframe.height = '842px';
-
-  overlayContent.appendChild(iframe);
-  overlay.appendChild(overlayContent);
-}
-
-});
-
-    </script>
-
+                // Reset opacity and z-index for other elements to initial state
+                urbanVisualPollution.style.opacity = '1';
+                urbanVisualPollution.style.zIndex = '1';
+                newsclassification.style.opacity = '1';
+                newsclassification.style.zIndex = '1';
+                churnprediction.style.opacity = '1';
+                churnprediction.style.zIndex = '1';
+                onTimeLate.style.opacity = '0';
+                onTimeLate.style.zIndex = '0';
+                sentimentanalysis.style.opacity = '0';
+                sentimentanalysis.style.zIndex = '0';
+                timeseries.style.opacity = '0';
+                timeseries.style.zIndex = '0';
+            });
+      });
+    </script> -->
   </body>
 </html>

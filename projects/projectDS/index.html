@@ -3,133 +3,226 @@
   <head>
     <link rel="stylesheet" href="globals.css" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="preload">
     <title>Data Science</title>
   </head>
   <body>
-    <div class="data-science">
-      <div class="div">
-        <div class="projects-container">
-          <div class="fortnite project" data-overlay="OVERLAYfortnite/index.html">
-            <div class="overlap-group">
-              <img class="fortnite-card" src="img/News.png" />
-              <div class="text-wrapper">on Indonesian news data</div>
-              <div class="EDAFN">Web Scrapping &<br />Text Classification</div>
-            </div>
-          </div>
-          <div class="shipping project" data-overlay="OVERLAYshipping/index.html">
-            <div class="overlap">
-              <img class="img" src="img/shippping-card.png" />
-              <div class="text-wrapper-2">on a shipping company</div>
-              <div class="ontime-vs-late">Ontime vs Late<br />Prediction</div>
-            </div>
-          </div>
-          <div class="customer-churn project" data-overlay="OVERLAYcustomerchurn/index.html">
-            <div class="overlap-2">
-              <img class="time-series-card" src="img/time-series-card-1.png" />
-              <p class="p">on customers of a company</p>
-              <div class="churn-prediction">Churn<br />Prediction</div>
-            </div>
-          </div>
-          <div class="time-series project" data-overlay="OVERLAYtimeseries/index.html">
-            <div class="overlap">
-              <img class="img" src="img/time-series-card.png" />
-              <div class="text-wrapper-3">on ETH price</div>
-              <div class="time-series-2">Time Series<br />Forecasting</div>
-            </div>
-          </div>
-          <div class="sentimentanalysis project" data-overlay="OVERLAYsentimentalanalysis/index.html">
-            <div class="overlap-3">
-              <img class="SBX-card" src="img/sbx-card.png" />
-              <div class="text-wrapper-4">on Starbucks reviews</div>
-              <div class="sentiment-analysis">Sentiment<br />Analysis</div>
-            </div>
-          </div>
-          
-          <div class="multi-image project" data-overlay="OVERLAYmultiimage/index.html">
-            <div class="overlap">
-              <img class="img" src="img/multi-image-card.png" />
-              <div class="text-wrapper-5">on urban visual pollution</div>
-              <div class="multi-class-image">Multi-class Image<br />Classification</div>
-            </div>
-          </div>
-
-          
-            <a href="https://www.datacamp.com/portfolio/zashari" target="_blank" rel="noopener noreferrer"
-              ><div class="data-camp project">
-                <div class="explore-d-chere">
-                  <div class="here">here</div>
-                  <div class="DC">datacamp</div>
-                  <p class="explore">Explore my other projects in</p>
+    <div class="projects-ds">
+      <div class="overlap-group-wrapper">
+        <div class="overlap-group">
+          <div class="projects-container">
+            <div class="plusfiller">
+              <div class="text-wrapper">+</div>
+              <div class="div">+</div>
+              <div class="datacamplink-container">
+                <a href="https://www.datacamp.com/portfolio/zashari" target="_blank"rel="noopener noreferrer"> 
+                  <div class="datacamplink">
+                    <div class="datacamplink-box">
+                      <div class="datacamptext">More from Datacamp</div>
+                    </div>
+                  </div>
+                </a>
                 </div>
-              </div></a
-            >
-          
-        </div>
+            </div>
+            <!-- box 3 -->
+            <div class="churnprediction">
+              <a href="https://www.zashari.me/projects/projectDS/index.html" target="_blank"rel="noopener noreferrer"> 
+                <p class="text-wrapper21">on customers of a company</p>
+                <div class="text-wrapper-22">Churn Prediction</div>
+                <div class="cover-container">
+                  <img class="cover" src="img/COVERcustomerchurn.jpg" />
+                  <div class="description-container">
+                    <div class="descriptionbox">
+                      <p class="descriptiontext">
+                        I applied Random Forest algorithms to predict customer churn within a telecommunications company. 
+                        This project involved comprehensive exploration and analysis of the dataset to develop an effective predictive model.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
 
-        <div id="overlay" class="overlay">
-          <!-- Content of the overlay will be loaded dynamically here -->
-        </div>
+            <div class="timeseries">
+              <a href="https://github.com/zashari/Workin-on-DeepLearning-ETHprice" target="_blank"rel="noopener noreferrer"> 
+                <p class="text-wrapper21">on ETH price</p>
+                <div class="text-wrapper-22">Time Series Forecasting</div>
+                <div class="cover-container">
+                  <img class="cover" src="img/COVERtimeseries.jpg" />
+                  <div class="description-container">
+                    <div class="descriptionbox">
+                      <p class="descriptiontext">
+                        I employed advanced Recurrent Neural Networks (RNN) in a comprehensive analysis to forecast Ethereum (ETH) price movements, 
+                        effectively leveraging time series data analysis techniques. This project aimed to provide valuable insights into the dynamic cryptocurrency market and enhance predictive accuracy.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
 
-        <img class="vector" src="img/vector-5.svg" />
-        <div class="overlap-wrapper">
-          <div class="overlap-4">
-            <div class="text-wrapper-6">Data</div>
-            <div class="text-wrapper-7">Science</div>
+            <!-- box 2 -->
+            <div class="newsclassification">
+              <a href="https://github.com/zashari/TextClassification_fromNewsData" target="_blank"rel="noopener noreferrer"> 
+                <div class="text-wrapper-31">on Indonesian Text News</div>
+                <p class="text-wrapper-32">Web Scrapping &amp; Text Classification</p>
+                <div class="cover-container">
+                  <img class="cover" src="img/COVERnewsprediction.jpg" />
+                  <div class="description-container">
+                    <div class="descriptionbox">
+                      <p class="descriptiontext">
+                        Unveiling the power of text mining, my project pits SVM against RandomForest using Word2Vec and TF-IDF text representations. 
+                        Collected from six digital media sources, my dataset of Indonesian news articles fuels a head-to-head classification comparison across five news categories.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="sentimentanalysis">
+              <a href="https://github.com/zashari/DS-Sbux_SimpleSentimentalAnalysis/tree/main" target="_blank"rel="noopener noreferrer"> 
+                <div class="text-wrapper-31">on Starbucks reviews</div>
+                <p class="text-wrapper-32">Text sentiment Analysis</p>
+                <div class="cover-container">
+                  <img class="cover" src="img/COVERsentimentanalysis.jpg" />
+                  <div class="description-container">
+                    <div class="descriptionbox">
+                      <p class="descriptiontext">
+                        I conducted sentiment analysis on Starbucks customer reviews, delving into a substantial volume of
+                        feedback to distinguish between positive and negative sentiments while exemplifying key characteristics of each.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <!-- box 1 -->
+            <div class="urbanvisualpollution">
+              <a href="https://github.com/zashari/DeepLearning-MulticlassImageClassification" target="_blank"rel="noopener noreferrer"> 
+                <div class="text-wrapper-41">on visual urban pollution</div>
+                <div class="text-wrapper-42">Multi-class Image Classification</div>
+                <div class="cover-container">
+                  <img class="cover" src="img/COVERuvp.jpg" />
+                  <div class="description-container">
+                    <div class="descriptionbox">
+                      <p class="descriptiontext">
+                        I undertook the task of classifying a vast dataset comprising thousands of urban visual pollution
+                        images. Leveraging Convolutional Neural Networks (CNN) and the ResNet architecture, I conducted rigorous
+                        experimentation to determine the most effective neural network design for this classification challenge.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="ontimelate">
+              <a href="https://github.com/zashari/DS-ShippingDataset/tree/main" target="_blank"rel="noopener noreferrer"> 
+                <div class="text-wrapper-41">on a shipping company</div>
+                <div class="text-wrapper-42">Ontime vs Late Prediction</div>
+                <div class="cover-container">
+                  <img class="cover" src="img/COVERshipping.jpg" />
+                  <div class="description-container">
+                    <div class="descriptionbox">
+                      <p class="descriptiontext">
+                        In this project, I harnessed the power of R to conduct a comprehensive Exploratory Data Analysis (EDA), create data visualizations, and construct a Regression Polynomial model. 
+                        The primary goal was to predict the timeliness of product deliveries, using advanced analytical techniques to determine whether a shipment would arrive on time or experience delays.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <button class="panah-btn">
+                <img class="panahkanan" src="img/panahkanan.png" alt="Next" />
+                <img class="panahkiri" src="img/panahkiri.png" alt="Prev">
+            </button>
           </div>
+          <div class="overlap">
+            <img class="panah" src="img/panah.svg" />
+            <div class="projecttext">Projects</div>
+          </div>
+          <img class="star" src="img/star-7.svg" />
+          <div class="projects-list">
+
+             <a href="../projectbd/index.html">
+              <div class="businessdevelopment">Business Development</div>
+            </a>
+            
+            <a href="../projectse/index.html">
+              <div class="softwareengineering">Software Engineering</div>
+            </a>
+            
+            <a href="../projectcc/index.html">
+              <div class="cloudcomputing">Cloud Computing</div>
+            </a>
+
+            <div class="datascience">Data Science</div>
+          </div>
+          <a href="../../index.html">
+            <div class="home">Back to home</div>
+          </a>
         </div>
       </div>
     </div>
+
     <script>
-      document.addEventListener('DOMContentLoaded', function () {
-  // Get the overlay element
-  var overlay = document.getElementById('overlay');
+      document.addEventListener('DOMContentLoaded', function() {
+            var panahkanan = document.querySelector('.panahkanan');
+            var panahkiri = document.querySelector('.panahkiri');
+            var urbanVisualPollution = document.querySelector('.urbanvisualpollution');
+            var onTimeLate = document.querySelector('.ontimelate');
+            var newsclassification = document.querySelector('.newsclassification');
+            var sentimentanalysis = document.querySelector('.sentimentanalysis');
+            var churnprediction = document.querySelector('.churnprediction');
+            var timeseries = document.querySelector('.timeseries');
 
-  // Get all elements with class name '.project'
-  var projects = document.querySelectorAll('.data-science .project');
+            // Initially hide panahkiri
+            panahkiri.style.display = 'none';
 
-  // Add click event listener to each project element
-  projects.forEach(function (project) {
-    project.addEventListener('click', function () {
-      // Get the corresponding overlay path
-      var overlayPath = project.getAttribute('data-overlay');
+            panahkanan.addEventListener('click', function() {
+                // Change visibility of panahkanan and panahkiri
+                panahkanan.style.display = 'none';
+                panahkiri.style.display = 'block';
 
-      // Load overlay content dynamically
-      loadOverlayContent(overlayPath);
+                // Change opacity and z-index for other elements
+                urbanVisualPollution.style.opacity = '0';
+                urbanVisualPollution.style.zIndex = '0';
+                newsclassification.style.opacity = '0';
+                newsclassification.style.zIndex = '0';
+                churnprediction.style.opacity = '0';
+                churnprediction.style.zIndex = '0';
+                onTimeLate.style.opacity = '1';
+                onTimeLate.style.zIndex = '1';
+                sentimentanalysis.style.opacity = '1';
+                sentimentanalysis.style.zIndex = '1';
+                timeseries.style.opacity = '1';
+                timeseries.style.zIndex = '1';
+            });
 
-      // Show the overlay
-      overlay.style.display = 'flex';
-    });
-  });
+            panahkiri.addEventListener('click', function() {
+                // Reset visibility of panahkanan and panahkiri
+                panahkanan.style.display = 'block';
+                panahkiri.style.display = 'none';
 
-  // Add click event listener to close the overlay when clicking outside of it
-  overlay.addEventListener('click', function (event) {
-    if (event.target === overlay) {
-      // Hide the overlay
-      overlay.style.display = 'none';
-    }
-  });
-
-  function loadOverlayContent(path) {
-  // Clear the previous content
-  overlay.innerHTML = '';
-
-  // You can use AJAX or other methods to load content from the specified path
-  // For simplicity, I'll just set some text content in this example
-  var overlayContent = document.createElement('div');
-  overlayContent.classList.add('overlay-content');
-
-  // Create an iframe element with specified width and height
-  var iframe = document.createElement('iframe');
-  iframe.src = path;
-  iframe.width = '595px';
-  iframe.height = '842px';
-
-  overlayContent.appendChild(iframe);
-  overlay.appendChild(overlayContent);
-}
-
-});
-
+                // Reset opacity and z-index for other elements to initial state
+                urbanVisualPollution.style.opacity = '1';
+                urbanVisualPollution.style.zIndex = '1';
+                newsclassification.style.opacity = '1';
+                newsclassification.style.zIndex = '1';
+                churnprediction.style.opacity = '1';
+                churnprediction.style.zIndex = '1';
+                onTimeLate.style.opacity = '0';
+                onTimeLate.style.zIndex = '0';
+                sentimentanalysis.style.opacity = '0';
+                sentimentanalysis.style.zIndex = '0';
+                timeseries.style.opacity = '0';
+                timeseries.style.zIndex = '0';
+            });
+      });
     </script>
   </body>
 </html>

@@ -1,0 +1,39 @@
+/* styles.css */
+body {
+    font-family: 'satoshi variable', sans-serif;
+}
+
+header {
+    background-color: #ff6f61;
+    color: white;
+    text-align: center;
+    padding: 50px 0;
+}
+
+header h1 span {
+    color: black;
+}
+
+.about-me {
+    background-color: #f2f2f2;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.contact a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: black;
+}
+
+.projects {
+    background-color: #d9d9d9;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.certifications {
+    background-color: #bfbfbf;
+    padding: 50px 0;
+    text-align: center;
+}

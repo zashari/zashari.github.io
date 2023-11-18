@@ -3,81 +3,121 @@
   <head>
     <link rel="stylesheet" href="globals.css" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="preload">
     <title>Business Development</title>
   </head>
   <body>
-    <div class="business-development">
-      <div class="div">
-        <div class="projects-container">
-          <div class="wayst project" data-overlay="OVERLAYwayst/index.html">
-            <div class="overlap-group">
-              <img class="wayst-card" src="img/wayst-card.png" />
-              <div class="text-wrapper">waste vending machine</div>
-              <div class="WAYST-waste">WAYST: Waste <br />Management Solution</div>
+    <div class="projects-cc">
+      <div class="overlap-group-wrapper">
+        <div class="overlap-group">
+          <div class="projects-container">
+            <div class="plusfiller">
+              <div class="plus1">+</div>
+              <div class="plus2">+</div>
             </div>
+
+            <!-- box 1 -->
+            <div class="wayst">
+              <a href="https://www.notion.so/WAYST-bd3b67ed69a34a4ba4d876a1f62845ca" target="_blank"rel="noopener noreferrer"> 
+                <div class="text-wrapper-41">sync gallery to S3</div>
+                <div class="text-wrapper-42">WAYST: Waste Management Solution</div>
+                <div class="cover-container">
+                  <img class="cover" src="img/COVERsyncS3.jpg" />
+                  <div class="description-container">
+                    <div class="descriptionbox">
+                      <p class="descriptiontext">
+                        WAYST represents one of my entrepreneurial endeavors, collaboratively developed with my friends. In 2022, our dedication and innovation earned us 
+                        first place in a prestigious business pitching competition. WAYST operates as a B2B entity with a primary focus on plastic waste management. We've 
+                        successfully designed a prototype that optimizes waste management processes, resulting in cost savings and increased operational efficiency for businesses
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+
           </div>
+          <div class="overlap">
+            <img class="panah" src="img/panah.svg" />
+            <div class="projecttext">Projects</div>
+          </div>
+          <img class="star" src="img/star-7.svg" />
+          <div class="projects-list">
+            <div class="businessdevelopment">Business Development</div>
+            
+            <a href="../projectse/index.html">
+              <div class="softwareengineering">Software Engineering</div>
+            </a>
+
+            <a href="../projectcc/index.html">
+              <div class="cloudcomputing">Cloud Computing</div>
+            </a>
+
+            <a href="../projectds/index.html">
+                <div class="datascience">Data Science</div>
+            </a>
+          </div>
+          <a href="../../index.html">
+            <div class="home">Back to home</div>
+          </a>
         </div>
-        <div id="overlay" class="overlay">
-          <!-- Content of the overlay will be loaded dynamically here -->
-        </div>
-        <div class="div-2">
-          <div class="text-wrapper-2">Business</div>
-          <div class="text-wrapper-3">Development</div>
-        </div>
-        <img class="vector" src="img/vector-8.svg" />
       </div>
     </div>
-    <script>
-      document.addEventListener('DOMContentLoaded', function () {
-  // Get the overlay element
-  var overlay = document.getElementById('overlay');
 
-  // Get all elements with class name '.project'
-  var projects = document.querySelectorAll('.business-development .project');
+    <!-- <script>
+      document.addEventListener('DOMContentLoaded', function() {
+            var panahkanan = document.querySelector('.panahkanan');
+            var panahkiri = document.querySelector('.panahkiri');
+            var urbanVisualPollution = document.querySelector('.urbanvisualpollution');
+            var onTimeLate = document.querySelector('.ontimelate');
+            var newsclassification = document.querySelector('.newsclassification');
+            var sentimentanalysis = document.querySelector('.sentimentanalysis');
+            var churnprediction = document.querySelector('.churnprediction');
+            var timeseries = document.querySelector('.timeseries');
 
-  // Add click event listener to each project element
-  projects.forEach(function (project) {
-    project.addEventListener('click', function () {
-      // Get the corresponding overlay path
-      var overlayPath = project.getAttribute('data-overlay');
+            // Initially hide panahkiri
+            panahkiri.style.display = 'none';
 
-      // Load overlay content dynamically
-      loadOverlayContent(overlayPath);
+            panahkanan.addEventListener('click', function() {
+                // Change visibility of panahkanan and panahkiri
+                panahkanan.style.display = 'none';
+                panahkiri.style.display = 'block';
 
-      // Show the overlay
-      overlay.style.display = 'flex';
-    });
-  });
+                // Change opacity and z-index for other elements
+                urbanVisualPollution.style.opacity = '0';
+                urbanVisualPollution.style.zIndex = '0';
+                newsclassification.style.opacity = '0';
+                newsclassification.style.zIndex = '0';
+                churnprediction.style.opacity = '0';
+                churnprediction.style.zIndex = '0';
+                onTimeLate.style.opacity = '1';
+                onTimeLate.style.zIndex = '1';
+                sentimentanalysis.style.opacity = '1';
+                sentimentanalysis.style.zIndex = '1';
+                timeseries.style.opacity = '1';
+                timeseries.style.zIndex = '1';
+            });
 
-  // Add click event listener to close the overlay when clicking outside of it
-  overlay.addEventListener('click', function (event) {
-    if (event.target === overlay) {
-      // Hide the overlay
-      overlay.style.display = 'none';
-    }
-  });
+            panahkiri.addEventListener('click', function() {
+                // Reset visibility of panahkanan and panahkiri
+                panahkanan.style.display = 'block';
+                panahkiri.style.display = 'none';
 
-  function loadOverlayContent(path) {
-  // Clear the previous content
-  overlay.innerHTML = '';
-
-  // You can use AJAX or other methods to load content from the specified path
-  // For simplicity, I'll just set some text content in this example
-  var overlayContent = document.createElement('div');
-  overlayContent.classList.add('overlay-content');
-
-  // Create an iframe element with specified width and height
-  var iframe = document.createElement('iframe');
-  iframe.src = path;
-  iframe.width = '595px';
-  iframe.height = '842px';
-
-  overlayContent.appendChild(iframe);
-  overlay.appendChild(overlayContent);
-}
-
-});
-
-    </script>
+                // Reset opacity and z-index for other elements to initial state
+                urbanVisualPollution.style.opacity = '1';
+                urbanVisualPollution.style.zIndex = '1';
+                newsclassification.style.opacity = '1';
+                newsclassification.style.zIndex = '1';
+                churnprediction.style.opacity = '1';
+                churnprediction.style.zIndex = '1';
+                onTimeLate.style.opacity = '0';
+                onTimeLate.style.zIndex = '0';
+                sentimentanalysis.style.opacity = '0';
+                sentimentanalysis.style.zIndex = '0';
+                timeseries.style.opacity = '0';
+                timeseries.style.zIndex = '0';
+            });
+      });
+    </script> -->
   </body>
 </html>

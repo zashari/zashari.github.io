@@ -1,0 +1,320 @@
+body {
+  background-color: #bcb0ad;
+}
+
+.contact {
+  background-color: #bcb0ad;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  max-width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contact .contact-container-wrapper {
+  background-color: #bcb0ad;
+  width: 1286px;
+  height: 1052px;
+  margin: auto;
+}
+
+.contact .contact-container {
+  position: relative;
+  width: 1286px;
+  height: 752px;
+}
+
+.contact .overlap {
+  position: absolute;
+  width: 1286px;
+  height: 752px;
+  top: 0;
+  left: 0;
+}
+
+.contact .box {
+  position: absolute;
+  width: 1286px;
+  height: 752px;
+  top: 0px;
+  left: 0px;
+  background-color: #d9d9d9;
+  border-radius: 10px;
+  box-shadow: 0px 0px 70px #000000eb;
+}
+
+.contact .aboutme {
+  position: absolute;
+  width: 1286px;
+  height: 752px;
+  top: 0px;
+  left: 0px;
+}
+
+.contact .text{
+  position: relative;
+  top: 24px;
+  left: 108px;
+}
+
+.contact .overlap-group {
+  position: absolute;
+  width: 378px;
+  height: 711px;
+  top: 20px;
+  left: 892px;
+}
+
+.contact .photoofme {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+.contact .andi-izzat-zaky {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-family: "Satoshi Variable-Black", Helvetica;
+  font-weight: 900;
+  color: #000000;
+  font-size: 104px;
+  text-align: right;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.contact .i-possess-a-strong {
+  position: absolute;
+  width: 757px;
+  top: 562px;
+  left: 0;
+  font-family: "Satoshi Variable-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 20px;
+  text-align: right;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.contact .separator {
+  position: absolute;
+  width: 540px;
+  height: 2px;
+  top: 518px;
+  left: 217px;
+}
+
+.contact .zaky-here-your-go-to {
+  position: absolute;
+  width: 757px;
+  top: 338px;
+  left: 0;
+  font-family: "Satoshi Variable-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 20px;
+  text-align: right;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.contact .img {
+  position: absolute;
+  width: 540px;
+  height: 2px;
+  top: 300px;
+  left: 217px;
+}
+
+.contact .div {
+  top: 2px;
+  left: 19px;
+  transform: rotate(45deg);
+  font-family: "Satoshi Variable-Light", Helvetica;
+  font-weight: 300;
+  color: #000000;
+  font-size: 50px;
+  position: absolute;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.contact .row {
+  position: absolute;
+  width: 1286px;
+  height: 261px;
+  top: 793px;
+  left: 0px;
+  background-color: #d9d9d9;
+  border-radius: 10px;
+  box-shadow: 0px 0px 70px #000000eb;
+}
+
+.contact .langandtools {
+  position: absolute;
+  width: 198px;
+  height: 143px;
+  top: 59px;
+  left: 37px;
+}
+
+.contact .overlap-group-2 {
+  position: relative;
+  width: 196px;
+  height: 143px;
+}
+
+.contact .python {
+  position: absolute;
+  width: 56px;
+  height: 56px;
+  top: 0;
+  left: 0;
+}
+
+.contact .css {
+  position: absolute;
+  width: 56px;
+  height: 56px;
+  top: 43px;
+  left: 98px;
+}
+
+.contact .mongodb {
+  position: absolute;
+  width: 56px;
+  height: 56px;
+  top: 87px;
+  left: 49px;
+}
+
+.contact .aws {
+  position: absolute;
+  width: 56px;
+  height: 56px;
+  top: 42px;
+  left: 140px;
+}
+
+.contact .gcp {
+  position: absolute;
+  width: 56px;
+  height: 56px;
+  top: 87px;
+  left: 98px;
+}
+
+.contact .mysql {
+  position: absolute;
+  width: 56px;
+  height: 56px;
+  top: 82px;
+  left: 4px;
+}
+
+.contact .js {
+  position: absolute;
+  width: 56px;
+  height: 56px;
+  top: 0;
+  left: 49px;
+}
+
+.contact .html {
+  position: absolute;
+  width: 56px;
+  height: 56px;
+  top: 44px;
+  left: 49px;
+}
+
+.contact .clang {
+  position: absolute;
+  width: 30px;
+  height: 33px;
+  top: 54px;
+  left: 13px;
+  object-fit: cover;
+}
+
+.contact .r {
+  position: absolute;
+  width: 33px;
+  height: 33px;
+  top: 11px;
+  left: 107px;
+  object-fit: cover;
+}
+
+.contact .jupyter {
+  position: absolute;
+  width: 33px;
+  height: 38px;
+  top: 8px;
+  left: 149px;
+  object-fit: cover;
+}
+
+.contact .text-wrapper-2 {
+  top: 70px;
+  left: 153px;
+  font-family: "Satoshi Variable-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 42px;
+  position: absolute;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.contact .contact-list {
+  position: absolute;
+  width: 1010px;
+  height: 261px;
+  top: 0;
+  left: 274px;
+  background-color: #d9d9d9;
+  box-shadow: 0px 0px 24px 10px #00000040;
+  border-radius: 200px 10px 10px 200px;
+}
+
+.contact .social-media-gmail {
+  left: 812px;
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  top: 27px;
+}
+
+.contact .social-media-spotify {
+  left: 572px;
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  top: 27px;
+}
+
+.contact .social-media {
+  left: 330px;
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  top: 27px;
+}
+
+.contact .social-media-2 {
+  left: 88px;
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  top: 27px;
+}
