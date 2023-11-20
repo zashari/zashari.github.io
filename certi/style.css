@@ -1,0 +1,184 @@
+body {
+  background-color: #bcb0ad;
+  animation: bodycolor 8s ease-out forwards 1s;
+}
+
+@keyframes bodycolor {
+  from {
+    background-color: #d9d9d9; /* original color */
+  }
+  to {
+    background-color: black; /* new color */
+    z-index: 999;
+  }
+}
+
+@keyframes colorChange {
+  from {
+    background-color: #d9d9d9; /* original color */
+  }
+  to {
+    background-color: black; /* new color */
+    border-radius: 0px;
+  }
+}
+
+@keyframes changeTextColor {
+  0% { color: #000000; } /* initial color */
+  50% { color: rgba(0, 0, 0, 0.984); } /* remains the initial color until 3s */
+  100% { color: white; } /* changes to white at the end */
+}
+
+
+@keyframes unblurandshow {
+  from{
+    filter: blur(10px); /* Apply a blur effect */
+    opacity: 0;
+    z-index: 0;
+  }
+  to{
+    filter: blur(0px); /* Apply a blur effect */
+    opacity: 1;
+    z-index: 99;
+  }
+}
+
+@keyframes opacityincrease {
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+  
+}
+
+.certification {
+  background-color: #bcb0ad;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  max-width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
+  animation: bodycolor 8s ease-out forwards 1s;
+}
+
+ .exit{
+  position: absolute;
+  color: #bcb0ad;
+  font-size: 90px;
+  left: 106px;
+  top: 50px;
+  z-index: 999999;
+  transform: rotate(225deg);
+  opacity: 0;
+  animation: opacityincrease 2s ease-out forwards 8s;
+}
+
+.certification .overlap-group-wrapper {
+  background-color: #bcb0ad;
+  width: 1286px;
+  height: 752px;
+  margin: auto;
+}
+
+.certification .overlap-group {
+  position: relative;
+  width: 1286px;
+  height: 752px;
+  top: 0px;
+  left: 0px;
+  background-color: #d9d9d9;
+  border-radius: 10px;
+  box-shadow: 0px 0px 70px #000000eb;
+  overflow: hidden;
+  animation: colorChange 3s ease-out forwards 1s;
+}
+
+.certification .license {
+  position: absolute;
+  width: 992px;
+  padding-top: 35vh;
+  left: 145px;
+  opacity: 0.5;
+  font-family: "Satoshi Variable-Black", Helvetica;
+  font-weight: 900;
+  color: #000000;
+  font-size: 90px;
+  letter-spacing: 0;
+  line-height: normal;
+  animation: changeTextColor 2s forwards 1s;
+  z-index: 4;
+}
+
+.certification .certiAWS{
+  position: absolute;
+  width: 669px;
+  height: 546px;
+  top: 99px;
+  left: 322px;
+  object-fit: cover;
+  filter: blur(10px);  
+   /* opacity: 0; */
+  /* z-index: 0; */
+  /* animation: unblurandshow 3s forwards 5s; */
+}
+
+.certification .certiCISCO{
+  position: absolute;
+  width: 669px;
+  height: 546px;
+  top: 99px;
+  left: 322px;
+  object-fit: cover;
+  filter: blur(10px); 
+  /* opacity: 0; */
+  /* z-index: 0; */
+  /* animation: unblurandshow 3s forwards 5s; */
+}
+
+.certification .certiAWSACAD{
+  position: absolute;
+  width: 669px;
+  height: 546px;
+  top: 99px;
+  left: 322px;
+  object-fit: cover;
+  filter: blur(10px); 
+  /* opacity: 0; */
+  /* z-index: 0; */
+  /* animation: unblurandshow 3s forwards 5s; */
+}
+
+
+/* 
+.certification .img{
+  position: absolute;
+  width: 669px;
+  height: 546px;
+  top: 99px;
+  left: 322px;
+  object-fit: cover;
+  filter: blur(10px); 
+  opacity: 0;
+  z-index: 0;
+  animation: unblurandshow 3s forwards 5s;
+} */
+
+/*  
+.certification img {
+  display: none; 
+  position: absolute;
+  width: 669px;
+  height: 546px;
+  top: 99px;
+  left: 322px;
+  object-fit: cover;
+}
+
+.certification img:first-child {
+  display: block; 
+} */

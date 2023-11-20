@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="globals.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <a href="../index.html">
+      <div class="exit">+</div>
+    </a>
+ 
+    <div class="certification">
+      <div class="overlap-group-wrapper">
+        <div class="overlap-group">
+          <div class="license">License &amp; Certification</div>
+          <img class="certiAWS" src="img/certiAWS.png" alt="AWS Cloud Practitioner">
+          <img class="certiCISCO" src="img/certiCISCO.png" alt="CISCO">
+          <img class="certiAWSACAD" src="img/certiAWSACAD.png" alt="AWS Academy">
+        </div>
+      </div>
+    </div>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        var images = document.querySelectorAll('.certification img');
+        var currentIndex = 0;
+    
+        // Initially hide all images
+        images.forEach(img => {
+          img.style.display = 'none';
+          img.style.opacity = '0';
+          img.style.filter = 'blur(10px)';
+          img.style.zIndex = '99';
+        });
+    
+        // Function to show an image with animation
+        function showImage(index) {
+          images[index].style.display = 'block';
+          images[index].offsetWidth; // Trigger reflow to restart the animation
+          images[index].style.opacity = '1';
+          images[index].style.filter = 'blur(0px)';
+          images.style.zIndex = '99';
+        }
+    
+        // Show the first image after 3 seconds
+        setTimeout(() => {
+            // Start switching images every 2 seconds after the first image is shown
+          setInterval(function() {
+            // Hide the current image
+            images[currentIndex].style.display = 'none';
+      
+            // Increment currentIndex and wrap it if it goes beyond the number of images
+            currentIndex = (currentIndex + 1) % images.length;
+      
+            // Show the next image
+            showImage(currentIndex);
+          }, 2000);
+        }, 3000);
+    
+       
+      });
+    </script>
+    
+    
+
+  </body>
+</html>

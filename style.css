@@ -199,13 +199,13 @@ body {
   position: absolute;
   width: 47px;
   height: 428px;
-  top: 25%;
+  top: 23%;
   left: 1227px;
 }
 
 .home .text-wrapper-2 {
   position: absolute;
-  top: 353px;
+  top: 386px;
   left: -34px;
   transform: rotate(-90deg);
   font-family: "Satoshi Variable-Medium", Helvetica;
@@ -219,7 +219,7 @@ body {
 .home .text-wrapper-3 {
   position: absolute;
   top: 196px;
-  left: -25px;
+  left: -61px;
   transform: rotate(-90deg);
   font-family: "Satoshi Variable-Medium", Helvetica;
   font-weight: 500;
@@ -231,7 +231,7 @@ body {
 
 .home .text-wrapper-4 {
   position: absolute;
-  top: 36px;
+  top: 5px;
   left: -36px;
   transform: rotate(-90deg);
   font-family: "Satoshi Variable-Medium", Helvetica;
