@@ -22,43 +22,47 @@
 
     <script>
       document.addEventListener('DOMContentLoaded', function() {
-        var images = document.querySelectorAll('.certification img');
-        var currentIndex = 0;
-    
-        // Initially hide all images
-        images.forEach(img => {
-          img.style.display = 'none';
-          img.style.opacity = '0';
-          img.style.filter = 'blur(10px)';
-          img.style.zIndex = '99';
-        });
-    
-        // Function to show an image with animation
-        function showImage(index) {
-          images[index].style.display = 'block';
-          images[index].offsetWidth; // Trigger reflow to restart the animation
-          images[index].style.opacity = '1';
-          images[index].style.filter = 'blur(0px)';
-          images.style.zIndex = '99';
-        }
-    
-        // Show the first image after 3 seconds
-        setTimeout(() => {
-            // Start switching images every 2 seconds after the first image is shown
-          setInterval(function() {
-            // Hide the current image
-            images[currentIndex].style.display = 'none';
-      
-            // Increment currentIndex and wrap it if it goes beyond the number of images
-            currentIndex = (currentIndex + 1) % images.length;
-      
-            // Show the next image
+          var images = document.querySelectorAll('.certification img');
+          var currentIndex = 0;
+
+          // Initially set opacity and z-index to 0 for all images
+          images.forEach(img => {
+            img.style.animation = 'opacityincrease 3s forwards 3s';
+            img.style.zIndex = '0';
+          });
+
+          // Function to show an image
+          function showImage(index) {
+            images[index].style.opacity = '1';
+            images[index].style.zIndex = '99'; 
+            images[index].style.filter = 'blur(0px)';
+          }
+
+          // Function to hide an image
+          function hideImage(index) {
+            images[index].style.opacity = '0';
+            images[index].style.zIndex = '1'; 
+            images[index].style.filter = 'blur(0px)';
+          }
+
+          // Start the initial animation after 3 seconds
+          setTimeout(() => {
             showImage(currentIndex);
-          }, 2000);
-        }, 3000);
-    
-       
-      });
+
+            // Rotate through images every 3 seconds
+            setInterval(() => {
+              // Hide current image
+              hideImage(currentIndex);
+
+              // Move to the next image
+              currentIndex = (currentIndex + 1) % images.length;
+
+              // Show next image
+              showImage(currentIndex);
+            }, 2000);
+          }, 4000);
+        });
+
     </script>
     
     
