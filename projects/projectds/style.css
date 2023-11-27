@@ -85,7 +85,7 @@ body {
   line-height: normal;
 }
 
-.projects-ds .churnprediction {
+.projects-ds .bonebreak {
   position: absolute;
   width: 504px;
   height: 540px;
@@ -95,7 +95,7 @@ body {
   z-index: 1;
 }
 
-.projects-ds .timeseries{
+.projects-ds .churnprediction {
   position: absolute;
   width: 504px;
   height: 540px;
@@ -104,6 +104,7 @@ body {
   opacity: 0;
   z-index: 0;
 }
+
 
 .projects-ds .text-wrapper21 {
   position: absolute;
@@ -158,6 +159,17 @@ body {
   z-index: 0;
 }
 
+.projects-ds .coemission{
+  position: absolute;
+  width: 525px;
+  height: 540px;
+  top: 387px;
+  left: 654px;
+  opacity: 0;
+  z-index: 0;
+}
+
+
 .projects-ds .text-wrapper-31 {
   position: absolute;
   top: 499px;
@@ -206,6 +218,17 @@ body {
   z-index: 0;
 }
 
+
+.projects-ds .timeseries{
+  position: absolute;
+  width: 504px;
+  height: 540px;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  z-index: 0;
+}
+
 .projects-ds .text-wrapper-41 {
   position: absolute;
   top: 499px;
@@ -231,6 +254,14 @@ body {
 }
 
 .projects-ds .panahkanan {
+  position: absolute;
+  width: 235px;
+  height: 74px;
+  top: 109px;
+  left: 800px;
+  opacity: 0.5;
+}
+.projects-ds .panahkanan2 {
   position: absolute;
   width: 235px;
   height: 74px;

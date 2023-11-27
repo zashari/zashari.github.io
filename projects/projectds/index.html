@@ -25,8 +25,27 @@
                 </div>
             </div>
             <!-- box 3 -->
+            <div class="bonebreak">
+              <a href="https://github.com/zashari/ImageClassification-BoneBreakFracture" target="_blank"rel="noopener noreferrer"> 
+                <p class="text-wrapper21">a classfication of 12 types of bone fractures</p>
+                <div class="text-wrapper-22">Bone Fracture Image Classification</div>
+                <div class="cover-container">
+                  <img class="cover" src="img/COVERbonebreak.jpg" />
+                  <div class="description-container">
+                    <div class="descriptionbox">
+                      <p class="descriptiontext">
+                        I've been using a pre-trained MobileNetV2 model to extract features from images of fracture images. This model has been trained on a large dataset of images, 
+                        so it can learn to identify the important features of fractures on my dataset. I then use these embedded features to removing duplicates, outliers, and irrelevant 
+                        images to ensure a clean and robust dataset. Then i use the cleaned dataset to train a classification model on ResNet18 to classify the fractures into different categories.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+
             <div class="churnprediction">
-              <a href="https://www.zashari.me/projects/projectDS/index.html" target="_blank"rel="noopener noreferrer"> 
+              <a href="https://github.com/zashari/DS_CustomerChurn" target="_blank"rel="noopener noreferrer"> 
                 <p class="text-wrapper21">on customers of a company</p>
                 <div class="text-wrapper-22">Churn Prediction</div>
                 <div class="cover-container">
@@ -36,24 +55,6 @@
                       <p class="descriptiontext">
                         I applied Random Forest algorithms to predict customer churn within a telecommunications company. 
                         This project involved comprehensive exploration and analysis of the dataset to develop an effective predictive model.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </div>
-
-            <div class="timeseries">
-              <a href="https://github.com/zashari/Workin-on-DeepLearning-ETHprice" target="_blank"rel="noopener noreferrer"> 
-                <p class="text-wrapper21">on ETH price</p>
-                <div class="text-wrapper-22">Time Series Forecasting</div>
-                <div class="cover-container">
-                  <img class="cover" src="img/COVERtimeseries.jpg" />
-                  <div class="description-container">
-                    <div class="descriptionbox">
-                      <p class="descriptiontext">
-                        I employed advanced Recurrent Neural Networks (RNN) in a comprehensive analysis to forecast Ethereum (ETH) price movements, 
-                        effectively leveraging time series data analysis techniques. This project aimed to provide valuable insights into the dynamic cryptocurrency market and enhance predictive accuracy.
                       </p>
                     </div>
                   </div>
@@ -91,6 +92,25 @@
                       <p class="descriptiontext">
                         I conducted sentiment analysis on Starbucks customer reviews, delving into a substantial volume of
                         feedback to distinguish between positive and negative sentiments while exemplifying key characteristics of each.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="coemission">
+              <a href="https://github.com/zashari/Co2-Emission-Prediction" target="_blank"rel="noopener noreferrer"> 
+                <div class="text-wrapper-31">a classification and regression model</div>
+                <p class="text-wrapper-32">CO2 Emission Prediction</p>
+                <div class="cover-container">
+                  <img class="cover" src="img/COVERcoemission.jpg" />
+                  <div class="description-container">
+                    <div class="descriptionbox">
+                      <p class="descriptiontext">
+                        In this project, I am tasked with two objectives: classification (Decision Tree Classifier, Logistic Regression (Binary/Multinomial), 
+                        KNN Classifier, and Naive Bayes) and regression (Decision Tree Regressor, KNN Regressor, and Linear Regression) to compare the results of 
+                        the performance models from both classification and regression.
                       </p>
                     </div>
                   </div>
@@ -136,8 +156,27 @@
               </a>
             </div>
 
+            <div class="timeseries">
+              <a href="https://github.com/zashari/Workin-on-DeepLearning-ETHprice" target="_blank"rel="noopener noreferrer"> 
+                <p class="text-wrapper21">on ETH price</p>
+                <div class="text-wrapper-22">Time Series Forecasting</div>
+                <div class="cover-container">
+                  <img class="cover" src="img/COVERtimeseries.jpg" />
+                  <div class="description-container">
+                    <div class="descriptionbox">
+                      <p class="descriptiontext">
+                        I employed advanced Recurrent Neural Networks (RNN) in a comprehensive analysis to forecast Ethereum (ETH) price movements, 
+                        effectively leveraging time series data analysis techniques. This project aimed to provide valuable insights into the dynamic cryptocurrency market and enhance predictive accuracy.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+
             <button class="panah-btn">
                 <img class="panahkanan" src="img/panahkanan.png" alt="Next" />
+                <img class="panahkanan2" src="img/panahkanan.png" alt="Next" />
                 <img class="panahkiri" src="img/panahkiri.png" alt="Prev">
             </button>
           </div>
@@ -172,56 +211,112 @@
     <script>
       document.addEventListener('DOMContentLoaded', function() {
             var panahkanan = document.querySelector('.panahkanan');
+            var panahkanan2 = document.querySelector('.panahkanan2');
             var panahkiri = document.querySelector('.panahkiri');
             var urbanVisualPollution = document.querySelector('.urbanvisualpollution');
             var onTimeLate = document.querySelector('.ontimelate');
             var newsclassification = document.querySelector('.newsclassification');
             var sentimentanalysis = document.querySelector('.sentimentanalysis');
+            var bonebreak = document.querySelector('.bonebreak');
             var churnprediction = document.querySelector('.churnprediction');
             var timeseries = document.querySelector('.timeseries');
+            var coemission = document.querySelector('.coemission');
 
             // Initially hide panahkiri
             panahkiri.style.display = 'none';
+            panahkanan2.style.display = 'none';
 
             panahkanan.addEventListener('click', function() {
                 // Change visibility of panahkanan and panahkiri
                 panahkanan.style.display = 'none';
-                panahkiri.style.display = 'block';
+                panahkiri.style.display = 'none';
+                panahkanan2.style.display = 'block';
 
                 // Change opacity and z-index for other elements
+                  // BOX 1
                 urbanVisualPollution.style.opacity = '0';
                 urbanVisualPollution.style.zIndex = '0';
-                newsclassification.style.opacity = '0';
-                newsclassification.style.zIndex = '0';
-                churnprediction.style.opacity = '0';
-                churnprediction.style.zIndex = '0';
                 onTimeLate.style.opacity = '1';
                 onTimeLate.style.zIndex = '1';
-                sentimentanalysis.style.opacity = '1';
-                sentimentanalysis.style.zIndex = '1';
-                timeseries.style.opacity = '1';
-                timeseries.style.zIndex = '1';
-            });
-
-            panahkiri.addEventListener('click', function() {
-                // Reset visibility of panahkanan and panahkiri
-                panahkanan.style.display = 'block';
-                panahkiri.style.display = 'none';
-
-                // Reset opacity and z-index for other elements to initial state
-                urbanVisualPollution.style.opacity = '1';
-                urbanVisualPollution.style.zIndex = '1';
-                newsclassification.style.opacity = '1';
-                newsclassification.style.zIndex = '1';
-                churnprediction.style.opacity = '1';
-                churnprediction.style.zIndex = '1';
-                onTimeLate.style.opacity = '0';
-                onTimeLate.style.zIndex = '0';
-                sentimentanalysis.style.opacity = '0';
-                sentimentanalysis.style.zIndex = '0';
                 timeseries.style.opacity = '0';
                 timeseries.style.zIndex = '0';
+
+                  // BOX 2
+                newsclassification.style.opacity = '0';
+                newsclassification.style.zIndex = '0';
+                sentimentanalysis.style.opacity = '1';
+                sentimentanalysis.style.zIndex = '1';
+                coemission.style.opacity = '0';
+                coemission.style.zIndex = '0';
+
+                  // BOX 3
+                bonebreak.style.opacity = '0';
+                bonebreak.style.zIndex = '0';
+                churnprediction.style.opacity = '1';
+                churnprediction.style.zIndex = '1';
+               
+                
             });
+
+            panahkanan2.addEventListener('click', function() {
+                // Change visibility of panahkanan and panahkiri
+                panahkanan.style.display = 'none';
+                panahkiri.style.display = 'block';
+                panahkanan2.style.display = 'none';
+
+                // Change opacity and z-index for other elements
+                  // BOX 1
+                urbanVisualPollution.style.opacity = '0';
+                urbanVisualPollution.style.zIndex = '0';
+                onTimeLate.style.opacity = '0';
+                onTimeLate.style.zIndex = '0';
+                timeseries.style.opacity = '1';
+                timeseries.style.zIndex = '1';
+
+                  // BOX 2
+                newsclassification.style.opacity = '0';
+                newsclassification.style.zIndex = '0';
+                sentimentanalysis.style.opacity = '0';
+                sentimentanalysis.style.zIndex = '0';
+                coemission.style.opacity = '1';
+                coemission.style.zIndex = '1';
+
+                  // BOX 3
+                bonebreak.style.opacity = '0';
+                bonebreak.style.zIndex = '0';
+                churnprediction.style.opacity = '0';
+                churnprediction.style.zIndex = '0';
+            });
+
+              panahkiri.addEventListener('click', function() {
+                 // Change visibility of panahkanan and panahkiri
+                panahkanan.style.display = 'block';
+                panahkiri.style.display = 'none';
+                panahkanan2.style.display = 'none';
+
+                // Change opacity and z-index for other elements
+                  // BOX 1
+                urbanVisualPollution.style.opacity = '1';
+                urbanVisualPollution.style.zIndex = '1';
+                onTimeLate.style.opacity = '0';
+                onTimeLate.style.zIndex = '0';
+                timeseries.style.opacity = '0';
+                timeseries.style.zIndex = '0';
+
+                  // BOX 2
+                newsclassification.style.opacity = '1';
+                newsclassification.style.zIndex = '1';
+                sentimentanalysis.style.opacity = '0';
+                sentimentanalysis.style.zIndex = '0';
+                coemission.style.opacity = '0';
+                coemission.style.zIndex = '0';
+
+                  // BOX 3
+                bonebreak.style.opacity = '1';
+                bonebreak.style.zIndex = '1';
+                churnprediction.style.opacity = '0';
+                churnprediction.style.zIndex = '0';
+              });
       });
     </script>
   </body>
